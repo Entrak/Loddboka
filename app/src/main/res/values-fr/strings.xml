@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Livre de Tombola</string>
+    <string name="edit_loddbok">Modifier le carnet de tombola</string>
+    <string name="add_loddbok">Ajouter un carnet de tombola</string>
+    <string name="save_loddbok">Enregistrer le carnet de tombola</string>
+    <string name="hovedskjerm_add_loddbok_prompt">Cliquez ici pour ajouter un carnet de tombola</string>
+    <string name="hovedskjerm_add_loddbok_cd">Ajouter un nouveau carnet de tombola</string>
+    <string name="hovedskjerm_welcome_title">Bienvenue dans le Livre de Tombola !</string>
+    <string name="hovedskjerm_welcome_description">Cette application vous permet de tirer des tickets de carnets de tombola vendus lors de bazars ou d\'autres événements utilisant des carnets de tombola.</string>
+    <string name="legg_til_rediger_farge_label">Sélectionnez la couleur du carnet de tombola :</string>
+    <string name="legg_til_rediger_farge_error">Veuillez sélectionner une couleur.</string>
+    <string name="legg_til_rediger_bokstav_label">Lettre (A-Z)</string>
+    <string name="legg_til_rediger_bokstav_error">Veuillez saisir une seule lettre (A-Z).</string>
+    <string name="legg_til_rediger_start_label">Numéro de début</string>
+    <string name="legg_til_rediger_start_error">Veuillez saisir un numéro valide.</string>
+    <string name="legg_til_rediger_slutt_label">Numéro de fin</string>
+    <string name="legg_til_rediger_slutt_error">Le numéro de fin ne peut pas être inférieur au numéro de début.</string>
+    <string name="show_help">Afficher l\'aide</string>
+    <string name="bokstav_help">Saisissez la lettre figurant sur le carnet de tombola.</string>
+    <string name="start_help">Saisissez le premier numéro du carnet de tombola. Si le champ est vide, il sera automatiquement défini sur 1.</string>
+    <string name="end_help">Saisissez le dernier numéro du carnet de tombola. Si le champ est vide, il sera automatiquement défini sur 100.</string>
+    <string name="legg_til_rediger_bokstav_placeholder"> </string>
+    <string name="legg_til_rediger_start_placeholder">1</string>
+    <string name="legg_til_rediger_slutt_placeholder">100</string>
+
+    <string name="settings_title">Paramètres</string>
+    <string name="settings_reset_winning_ticket_list">Réinitialiser le tirage</string>
+    <string name="settings_reset_raffle_ticket_book_entries">Supprimer tous les carnets de tombola</string>
+    <string name="settings_reset_dialog_title">Confirmer la réinitialisation</string>
+    <string name="settings_reset_dialog_text">Supprimer tous les carnets de tombola ?</string>
+    <string name="settings_reset_dialog_confirm">Supprimer</string>
+    <string name="settings_reset_dialog_cancel">Annuler</string>
+    <string name="settings_language_use_system">Utiliser la langue du système</string>
+
+    <string name="trekning_no_tickets_left">Il n\'y a plus de tickets à tirer.</string>
+    <string name="trekning_press_button_to_draw">Appuyez sur le bouton pour tirer un ticket gagnant.</string>
+    <string name="trekning_start_again">Recommencer le tirage</string>
+    <string name="trekning_draw_new_winner">Tirer un nouveau ticket gagnant</string>
+    <string name="trekning_draw_winner">Tirer un ticket gagnant</string>
+    <string name="trekning_previous_winners">Gagnants précédents :</string>
+    <string name="trekning_all_winners">Tous les tickets gagnants</string>
+    <string name="trekning_winner_ticket">Ticket gagnant :</string>
+    <string name="historikk_title">Tickets gagnants</string>
+    <string name="historikk_close">Fermer</string>
+
+    <string name="loddbokliste_edit">Modifier</string>
+    <string name="loddbokliste_delete">Supprimer</string>
+    <string name="loddbokliste_farge">Couleur</string>
+    <string name="loddbokliste_bokstav">Lettre</string>
+    <string name="loddbokliste_nummer">N°</string>
+
+    <string name="color_red">Rouge</string>
+    <string name="color_blue">Bleu</string>
+    <string name="color_green">Vert</string>
+    <string name="color_yellow">Jaune</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_pink">Rose</string>
+    <string name="color_purple">Violet</string>
+    <string name="color_white">Blanc</string>
+
+    <string name="screen_title_loddboker">Carnets de tombola</string>
+    <string name="screen_title_legg_til_rediger">Ajouter/Modifier</string>
+    <string name="screen_title_trekk">Tirage</string>
+    <string name="screen_title_historikk">Historique</string>
+    <string name="screen_title_settings">Paramètres</string>
+</resources>

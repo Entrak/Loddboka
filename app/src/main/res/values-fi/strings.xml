@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Arpakirja</string>
+    <string name="edit_loddbok">Muokkaa arpakirjaa</string>
+    <string name="add_loddbok">Lisää arpakirja</string>
+    <string name="save_loddbok">Tallenna arpakirja</string>
+    <string name="hovedskjerm_add_loddbok_prompt">Napsauta tästä lisätäksesi arpakirjan</string>
+    <string name="hovedskjerm_add_loddbok_cd">Lisää uusi arpakirja</string>
+    <string name="hovedskjerm_welcome_title">Tervetuloa Arpakirjaan!</string>
+    <string name="hovedskjerm_welcome_description">Tämä sovellus antaa sinun arpoa arpoja myyjäisissä tai muissa tapahtumissa myydyistä arpakirjoista.</string>
+    <string name="legg_til_rediger_farge_label">Valitse arpakirjan väri:</string>
+    <string name="legg_til_rediger_farge_error">Valitse väri.</string>
+    <string name="legg_til_rediger_bokstav_label">Kirjain (A-Ö)</string>
+    <string name="legg_til_rediger_bokstav_error">Anna yksi kirjain (A-Ö).</string>
+    <string name="legg_til_rediger_start_label">Aloitusnumero</string>
+    <string name="legg_til_rediger_start_error">Anna kelvollinen numero.</string>
+    <string name="legg_til_rediger_slutt_label">Lopetusnumero</string>
+    <string name="legg_til_rediger_slutt_error">Lopetusnumero ei voi olla pienempi kuin aloitusnumero.</string>
+    <string name="show_help">Näytä ohje</string>
+    <string name="bokstav_help">Anna arpakirjassa oleva kirjain.</string>
+    <string name="start_help">Anna arpakirjan ensimmäinen numero. Jos kenttä on tyhjä, se asetetaan automaattisesti arvoon 1.</string>
+    <string name="end_help">Anna arpakirjan viimeinen numero. Jos kenttä on tyhjä, se asetetaan automaattisesti arvoon 100.</string>
+    <string name="legg_til_rediger_bokstav_placeholder"> </string>
+    <string name="legg_til_rediger_start_placeholder">1</string>
+    <string name="legg_til_rediger_slutt_placeholder">100</string>
+
+    <string name="settings_title">Asetukset</string>
+    <string name="settings_reset_winning_ticket_list">Nollaa arvonta</string>
+    <string name="settings_reset_raffle_ticket_book_entries">Poista kaikki arpakirjat</string>
+    <string name="settings_reset_dialog_title">Vahvista nollaus</string>
+    <string name="settings_reset_dialog_text">Poistetaanko kaikki arpakirjat?</string>
+    <string name="settings_reset_dialog_confirm">Poista</string>
+    <string name="settings_reset_dialog_cancel">Peruuta</string>
+    <string name="settings_language_use_system">Käytä järjestelmän kieltä</string>
+
+    <string name="trekning_no_tickets_left">Arvottavia arpoja ei ole enää jäljellä.</string>
+    <string name="trekning_press_button_to_draw">Paina painiketta arpoaksesi voittonumeron.</string>
+    <string name="trekning_start_again">Aloita arvonta alusta</string>
+    <string name="trekning_draw_new_winner">Arvo uusi voittonumero</string>
+    <string name="trekning_draw_winner">Arvo voittonumero</string>
+    <string name="trekning_previous_winners">Aiemmat voittajat:</string>
+    <string name="trekning_all_winners">Kaikki voittonumerot</string>
+    <string name="trekning_winner_ticket">Voittonumero:</string>
+    <string name="historikk_title">Voittonumerot</string>
+    <string name="historikk_close">Sulje</string>
+
+    <string name="loddbokliste_edit">Muokkaa</string>
+    <string name="loddbokliste_delete">Poista</string>
+    <string name="loddbokliste_farge">Väri</string>
+    <string name="loddbokliste_bokstav">Kirjain</string>
+    <string name="loddbokliste_nummer">Nro</string>
+
+    <string name="color_red">Punainen</string>
+    <string name="color_blue">Sininen</string>
+    <string name="color_green">Vihreä</string>
+    <string name="color_yellow">Keltainen</string>
+    <string name="color_orange">Oranssi</string>
+    <string name="color_pink">Vaaleanpunainen</string>
+    <string name="color_purple">Violetti</string>
+    <string name="color_white">Valkoinen</string>
+
+    <string name="screen_title_loddboker">Arpakirjat</string>
+    <string name="screen_title_legg_til_rediger">Lisää/Muokkaa</string>
+    <string name="screen_title_trekk">Arvo</string>
+    <string name="screen_title_historikk">Historia</string>
+    <string name="screen_title_settings">Asetukset</string>
+</resources>

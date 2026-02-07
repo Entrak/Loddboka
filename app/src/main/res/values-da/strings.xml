@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Lodseddelbogen</string>
+    <string name="edit_loddbok">Rediger lodseddelbog</string>
+    <string name="add_loddbok">Tilføj lodseddelbog</string>
+    <string name="save_loddbok">Gem lodseddelbog</string>
+    <string name="hovedskjerm_add_loddbok_prompt">Klik her for at tilføje en lodseddelbog</string>
+    <string name="hovedskjerm_add_loddbok_cd">Tilføj ny lodseddelbog</string>
+    <string name="hovedskjerm_welcome_title">Velkommen til Lodseddelbogen!</string>
+    <string name="hovedskjerm_welcome_description">Denne app lader dig trække lodder fra lodseddelbøger solgt på basarer eller andre arrangementer, hvor lodseddelbøger bruges.</string>
+    <string name="legg_til_rediger_farge_label">Vælg farve på lodseddelbogen:</string>
+    <string name="legg_til_rediger_farge_error">Vælg en farve.</string>
+    <string name="legg_til_rediger_bokstav_label">Bogstav (A-Å)</string>
+    <string name="legg_til_rediger_bokstav_error">Indtast et enkelt bogstav (A-Å).</string>
+    <string name="legg_til_rediger_start_label">Startnummer</string>
+    <string name="legg_til_rediger_start_error">Indtast et gyldigt tal.</string>
+    <string name="legg_til_rediger_slutt_label">Slutnummer</string>
+    <string name="legg_til_rediger_slutt_error">Slutnummer kan ikke være lavere end startnummer.</string>
+    <string name="show_help">Vis hjælp</string>
+    <string name="bokstav_help">Indtast det bogstav, der står på lodseddelbogen.</string>
+    <string name="start_help">Indtast det første nummer i lodseddelbogen. Hvis feltet er tomt, sættes det automatisk til 1.</string>
+    <string name="end_help">Indtast det sidste nummer i lodseddelbogen. Hvis feltet er tomt, sættes det automatisk til 100.</string>
+    <string name="legg_til_rediger_bokstav_placeholder"> </string>
+    <string name="legg_til_rediger_start_placeholder">1</string>
+    <string name="legg_til_rediger_slutt_placeholder">100</string>
+
+    <string name="settings_title">Indstillinger</string>
+    <string name="settings_reset_winning_ticket_list">Nulstil trækning</string>
+    <string name="settings_reset_raffle_ticket_book_entries">Slet alle lodseddelbøger</string>
+    <string name="settings_reset_dialog_title">Bekræft nulstilling</string>
+    <string name="settings_reset_dialog_text">Slet alle lodseddelbøger?</string>
+    <string name="settings_reset_dialog_confirm">Slet</string>
+    <string name="settings_reset_dialog_cancel">Annuller</string>
+    <string name="settings_language_use_system">Brug systemsprog</string>
+
+    <string name="trekning_no_tickets_left">Der er ikke flere lodder at trække.</string>
+    <string name="trekning_press_button_to_draw">Tryk på knappen for at trække en vinderlodseddel.</string>
+    <string name="trekning_start_again">Start trækningen forfra</string>
+    <string name="trekning_draw_new_winner">Træk ny vinderlodseddel</string>
+    <string name="trekning_draw_winner">Træk vinderlodseddel</string>
+    <string name="trekning_previous_winners">Tidligere vindere:</string>
+    <string name="trekning_all_winners">Alle vinderlodsedler</string>
+    <string name="trekning_winner_ticket">Vinderlodseddel:</string>
+    <string name="historikk_title">Vinderlodsedler</string>
+    <string name="historikk_close">Luk</string>
+
+    <string name="loddbokliste_edit">Rediger</string>
+    <string name="loddbokliste_delete">Slet</string>
+    <string name="loddbokliste_farge">Farve</string>
+    <string name="loddbokliste_bokstav">Bogstav</string>
+    <string name="loddbokliste_nummer">Nr.</string>
+
+    <string name="color_red">Rød</string>
+    <string name="color_blue">Blå</string>
+    <string name="color_green">Grøn</string>
+    <string name="color_yellow">Gul</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_pink">Pink</string>
+    <string name="color_purple">Lilla</string>
+    <string name="color_white">Hvid</string>
+
+    <string name="screen_title_loddboker">Lodseddelbøger</string>
+    <string name="screen_title_legg_til_rediger">Tilføj/Rediger</string>
+    <string name="screen_title_trekk">Træk</string>
+    <string name="screen_title_historikk">Historik</string>
+    <string name="screen_title_settings">Indstillinger</string>
+</resources>

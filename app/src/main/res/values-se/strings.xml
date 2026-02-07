@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Vuorbegirji</string>
+    <string name="edit_loddbok">Rievdat vuorbegirjji</string>
+    <string name="add_loddbok">Lasit vuorbegirjji</string>
+    <string name="save_loddbok">Vurke vuorbegirjji</string>
+    <string name="hovedskjerm_add_loddbok_prompt">Deaddel dása vai lasihat vuorbegirjji</string>
+    <string name="hovedskjerm_add_loddbok_cd">Lasit ođđa vuorbegirjji</string>
+    <string name="hovedskjerm_welcome_title">Bures boahtin Vuorbegirjái!</string>
+    <string name="hovedskjerm_welcome_description">Dát áppa litna du geassit vuorbbiid vuorbegirjjiin mat vuvdojuvvojit basárain dahje eará lágidemiin gos vuorbegirjjit adnojit.</string>
+    <string name="legg_til_rediger_farge_label">Vállje vuorbegirjji ivnni:</string>
+    <string name="legg_til_rediger_farge_error">Vállje ivnni.</string>
+    <string name="legg_til_rediger_bokstav_label">Bustávva (A-Å)</string>
+    <string name="legg_til_rediger_bokstav_error">Čále ovtta bustáva (A-Å).</string>
+    <string name="legg_til_rediger_start_label">Álgonummar</string>
+    <string name="legg_til_rediger_start_error">Čále gustovaš nummara.</string>
+    <string name="legg_til_rediger_slutt_label">Loahppanummar</string>
+    <string name="legg_til_rediger_slutt_error">Loahppanummar ii sáhte leat unnit go álgonummar.</string>
+    <string name="show_help">Čájet veahki</string>
+    <string name="bokstav_help">Čále bustáva mii lea vuorbegirjjis.</string>
+    <string name="start_help">Čále vuosttaš nummara vuorbegirjjis. Jos giđda lea guorus, de dat automáhtalaččat šaddá 1.</string>
+    <string name="end_help">Čále maŋemus nummara vuorbegirjjis. Jos giđda lea guorus, de dat automáhtalaččat šaddá 100.</string>
+    <string name="legg_til_rediger_bokstav_placeholder"> </string>
+    <string name="legg_til_rediger_start_placeholder">1</string>
+    <string name="legg_til_rediger_slutt_placeholder">100</string>
+
+    <string name="settings_title">Heivehusat</string>
+    <string name="settings_reset_winning_ticket_list">Nollestat geassima</string>
+    <string name="settings_reset_raffle_ticket_book_entries">Sihko buot vuorbegirjjiid</string>
+    <string name="settings_reset_dialog_title">Sihko nollestáđđema</string>
+    <string name="settings_reset_dialog_text">Sihkkot buot vuorbegirjjiid?</string>
+    <string name="settings_reset_dialog_confirm">Sihko</string>
+    <string name="settings_reset_dialog_cancel">Gaskkalduhte</string>
+    <string name="settings_language_use_system">Geavat systemgiela</string>
+
+    <string name="trekning_no_tickets_left">Eai leat eanet vuorbbat mat sáhttet geassojuvvot.</string>
+    <string name="trekning_press_button_to_draw">Deaddel boalu vai geasát vuoiti vuorbbi.</string>
+    <string name="trekning_start_again">Álggat geassima ođđasit</string>
+    <string name="trekning_draw_new_winner">Geasse ođđa vuoiti vuorbbi</string>
+    <string name="trekning_draw_winner">Geasse vuoiti vuorbbi</string>
+    <string name="trekning_previous_winners">Ovddeš vuoitit:</string>
+    <string name="trekning_all_winners">Buot vuoiti vuorbbat</string>
+    <string name="trekning_winner_ticket">Vuoiti vuorbbi:</string>
+    <string name="historikk_title">Vuoiti vuorbbat</string>
+    <string name="historikk_close">Dahppat</string>
+
+    <string name="loddbokliste_edit">Rievdat</string>
+    <string name="loddbokliste_delete">Sihko</string>
+    <string name="loddbokliste_farge">Ivdni</string>
+    <string name="loddbokliste_bokstav">Bustávva</string>
+    <string name="loddbokliste_nummer">Nr.</string>
+
+    <string name="color_red">Rukses</string>
+    <string name="color_blue">Alit</string>
+    <string name="color_green">Runat</string>
+    <string name="color_yellow">Fiskes</string>
+    <string name="color_orange">Oránša</string>
+    <string name="color_pink">Ruksesvár</string>
+    <string name="color_purple">Violeta</string>
+    <string name="color_white">Vilges</string>
+
+    <string name="screen_title_loddboker">Vuorbegirjjit</string>
+    <string name="screen_title_legg_til_rediger">Lasit/Rievdat</string>
+    <string name="screen_title_trekk">Geasse</string>
+    <string name="screen_title_historikk">Historihkka</string>
+    <string name="screen_title_settings">Heivehusat</string>
+</resources>

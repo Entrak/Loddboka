@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Raffle Book</string>
+    <string name="edit_loddbok">Edit Raffle Book</string>
+    <string name="add_loddbok">Add Raffle Book</string>
+    <string name="save_loddbok">Save Raffle Book</string>
+    <string name="hovedskjerm_add_loddbok_prompt">Click here to add a raffle book</string>
+    <string name="hovedskjerm_add_loddbok_cd">Add new raffle book</string>
+    <string name="hovedskjerm_welcome_title">Welcome to the Raffle Book!</string>
+    <string name="hovedskjerm_welcome_description">This app lets you draw tickets from raffle books sold at bazaars or other events where raffle books are used.</string>
+    <string name="legg_til_rediger_farge_label">Select raffle book color:</string>
+    <string name="legg_til_rediger_farge_error">Please select a color.</string>
+    <string name="legg_til_rediger_bokstav_label">Letter (A-Z)</string>
+    <string name="legg_til_rediger_bokstav_error">Please enter a single letter (A-Z).</string>
+    <string name="legg_til_rediger_start_label">Start number</string>
+    <string name="legg_til_rediger_start_error">Please enter a valid number.</string>
+    <string name="legg_til_rediger_slutt_label">End number</string>
+    <string name="legg_til_rediger_slutt_error">End number cannot be lower than start number.</string>
+    <string name="show_help">Show help</string>
+    <string name="bokstav_help">Enter the letter on the raffle book.</string>
+    <string name="start_help">Enter the first number in the raffle book. If the field is empty, it will automatically be set to 1.</string>
+    <string name="end_help">Enter the last number in the raffle book. If the field is empty, it will automatically be set to 100.</string>
+    <string name="legg_til_rediger_bokstav_placeholder"> </string>
+    <string name="legg_til_rediger_start_placeholder">1</string>
+    <string name="legg_til_rediger_slutt_placeholder">100</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_reset_winning_ticket_list">Reset drawing</string>
+    <string name="settings_reset_raffle_ticket_book_entries">Delete all raffle books</string>
+    <string name="settings_reset_dialog_title">Confirm reset</string>
+    <string name="settings_reset_dialog_text">Delete all raffle books?</string>
+    <string name="settings_reset_dialog_confirm">Delete</string>
+    <string name="settings_reset_dialog_cancel">Cancel</string>
+    <string name="settings_language_use_system">Use system language</string>
+
+    <string name="trekning_no_tickets_left">There are no more tickets to draw.</string>
+    <string name="trekning_press_button_to_draw">Press the button to draw a winning ticket.</string>
+    <string name="trekning_start_again">Start the drawing again</string>
+    <string name="trekning_draw_new_winner">Draw new winning ticket</string>
+    <string name="trekning_draw_winner">Draw winning ticket</string>
+    <string name="trekning_previous_winners">Previous winners:</string>
+    <string name="trekning_all_winners">All winning tickets</string>
+    <string name="trekning_winner_ticket">Winning ticket:</string>
+    <string name="historikk_title">Winning tickets</string>
+    <string name="historikk_close">Close</string>
+
+    <string name="loddbokliste_edit">Edit</string>
+    <string name="loddbokliste_delete">Delete</string>
+    <string name="loddbokliste_farge">Color</string>
+    <string name="loddbokliste_bokstav">Letter</string>
+    <string name="loddbokliste_nummer">No.</string>
+
+    <string name="color_red">Red</string>
+    <string name="color_blue">Blue</string>
+    <string name="color_green">Green</string>
+    <string name="color_yellow">Yellow</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_pink">Pink</string>
+    <string name="color_purple">Purple</string>
+    <string name="color_white">White</string>
+
+    <string name="screen_title_loddboker">Raffle Books</string>
+    <string name="screen_title_legg_til_rediger">Add/Edit</string>
+    <string name="screen_title_trekk">Draw</string>
+    <string name="screen_title_historikk">History</string>
+    <string name="screen_title_settings">Settings</string>
+</resources>

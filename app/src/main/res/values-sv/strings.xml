@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Lotteriboken</string>
+    <string name="edit_loddbok">Redigera lotteribok</string>
+    <string name="add_loddbok">Lägg till lotteribok</string>
+    <string name="save_loddbok">Spara lotteribok</string>
+    <string name="hovedskjerm_add_loddbok_prompt">Klicka här för att lägga till en lotteribok</string>
+    <string name="hovedskjerm_add_loddbok_cd">Lägg till ny lotteribok</string>
+    <string name="hovedskjerm_welcome_title">Välkommen till Lotteriboken!</string>
+    <string name="hovedskjerm_welcome_description">Denna app låter dig dra lotter från lotteriböcker sålda på basarer eller andra evenemang där lotteriböcker används.</string>
+    <string name="legg_til_rediger_farge_label">Välj färg på lotteriboken:</string>
+    <string name="legg_til_rediger_farge_error">Välj en färg.</string>
+    <string name="legg_til_rediger_bokstav_label">Bokstav (A-Ö)</string>
+    <string name="legg_til_rediger_bokstav_error">Ange en enskild bokstav (A-Ö).</string>
+    <string name="legg_til_rediger_start_label">Startnummer</string>
+    <string name="legg_til_rediger_start_error">Ange ett giltigt nummer.</string>
+    <string name="legg_til_rediger_slutt_label">Slutnummer</string>
+    <string name="legg_til_rediger_slutt_error">Slutnumret kan inte vara lägre än startnumret.</string>
+    <string name="show_help">Visa hjälp</string>
+    <string name="bokstav_help">Ange bokstaven som finns på lotteriboken.</string>
+    <string name="start_help">Ange det första numret i lotteriboken. Om fältet är tomt, sätts det automatiskt till 1.</string>
+    <string name="end_help">Ange det sista numret i lotteriboken. Om fältet är tomt, sätts det automatiskt till 100.</string>
+    <string name="legg_til_rediger_bokstav_placeholder"> </string>
+    <string name="legg_til_rediger_start_placeholder">1</string>
+    <string name="legg_til_rediger_slutt_placeholder">100</string>
+
+    <string name="settings_title">Inställningar</string>
+    <string name="settings_reset_winning_ticket_list">Återställ dragning</string>
+    <string name="settings_reset_raffle_ticket_book_entries">Ta bort alla lotteriböcker</string>
+    <string name="settings_reset_dialog_title">Bekräfta återställning</string>
+    <string name="settings_reset_dialog_text">Ta bort alla lotteriböcker?</string>
+    <string name="settings_reset_dialog_confirm">Ta bort</string>
+    <string name="settings_reset_dialog_cancel">Avbryt</string>
+    <string name="settings_language_use_system">Använd systemspråk</string>
+
+    <string name="trekning_no_tickets_left">Det finns inga fler lotter att dra.</string>
+    <string name="trekning_press_button_to_draw">Tryck på knappen för att dra en vinstlott.</string>
+    <string name="trekning_start_again">Starta dragningen på nytt</string>
+    <string name="trekning_draw_new_winner">Dra ny vinstlott</string>
+    <string name="trekning_draw_winner">Dra vinstlott</string>
+    <string name="trekning_previous_winners">Tidigare vinnare:</string>
+    <string name="trekning_all_winners">Alla vinstlotter</string>
+    <string name="trekning_winner_ticket">Vinstlott:</string>
+    <string name="historikk_title">Vinstlotter</string>
+    <string name="historikk_close">Stäng</string>
+
+    <string name="loddbokliste_edit">Redigera</string>
+    <string name="loddbokliste_delete">Ta bort</string>
+    <string name="loddbokliste_farge">Färg</string>
+    <string name="loddbokliste_bokstav">Bokstav</string>
+    <string name="loddbokliste_nummer">Nr</string>
+
+    <string name="color_red">Röd</string>
+    <string name="color_blue">Blå</string>
+    <string name="color_green">Grön</string>
+    <string name="color_yellow">Gul</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_pink">Rosa</string>
+    <string name="color_purple">Lila</string>
+    <string name="color_white">Vit</string>
+
+    <string name="screen_title_loddboker">Lotteriböcker</string>
+    <string name="screen_title_legg_til_rediger">Lägg till/Redigera</string>
+    <string name="screen_title_trekk">Dra</string>
+    <string name="screen_title_historikk">Historik</string>
+    <string name="screen_title_settings">Inställningar</string>
+</resources>

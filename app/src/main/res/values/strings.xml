@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Loddboka</string>
+    <string name="edit_loddbok">Rediger loddbok</string>
+    <string name="add_loddbok">Legg til loddbok</string>
+    <string name="save_loddbok">Lagre loddbok</string>
+    <string name="hovedskjerm_add_loddbok_prompt">Trykk her for å legge til loddbok</string>
+    <string name="hovedskjerm_add_loddbok_cd">Legg til ny loddbok</string>
+    <string name="hovedskjerm_welcome_title">Velkommen til Loddboka!</string>
+    <string name="hovedskjerm_welcome_description">Denne appen lar deg trekke loddbøker solgt på basarer eller andre tilstelninger hvor loddbøker benyttes.</string>
+    <string name="legg_til_rediger_farge_label">Velg farge på loddbok:</string>
+    <string name="legg_til_rediger_farge_error">Velg en farge.</string>
+    <string name="legg_til_rediger_bokstav_label">Bokstav (A-Å)</string>
+    <string name="legg_til_rediger_bokstav_error">Skriv inn én bokstav (A-Å).</string>
+    <string name="legg_til_rediger_start_label">Start-nummer</string>
+    <string name="legg_til_rediger_start_error">Skriv inn et gyldig tall.</string>
+    <string name="legg_til_rediger_slutt_label">Slutt-nummer</string>
+    <string name="legg_til_rediger_slutt_error">Sluttnummer kan ikke være lavere enn startnummer.</string>
+    <string name="show_help">Vis hjelp</string>
+    <string name="bokstav_help">Skriv inn bokstaven som er på loddboken.</string>
+    <string name="start_help">Skriv inn det første nummeret i loddboken. Om feltet er tomt, vil det automatisk settes til 1.</string>
+    <string name="end_help">Skriv inn det siste nummeret i loddboken. Om feltet er tomt, vil det automatisk settes til 100.</string>
+    <string name="legg_til_rediger_bokstav_placeholder"> </string>
+    <string name="legg_til_rediger_start_placeholder">1</string>
+    <string name="legg_til_rediger_slutt_placeholder">100</string>
+
+    <string name="settings_title">Innstillinger</string>
+    <string name="settings_reset_winning_ticket_list">Nullstill trekning</string>
+    <string name="settings_reset_raffle_ticket_book_entries">Slett alle loddbøker</string>
+    <string name="settings_reset_dialog_title">Bekreft nullstilling</string>
+    <string name="settings_reset_dialog_text">Slette alle loddbøker?</string>
+    <string name="settings_reset_dialog_confirm">Slett</string>
+    <string name="settings_reset_dialog_cancel">Avbryt</string>
+    <string name="settings_language_use_system">Bruk systemspråk</string>
+
+    <string name="trekning_no_tickets_left">Det er ingen flere lodd igjen å trekke.</string>
+    <string name="trekning_press_button_to_draw">Trykk på knappen for å trekke et vinnerlodd.</string>
+    <string name="trekning_start_again">Start trekningen på nytt</string>
+    <string name="trekning_draw_new_winner">Trekk nytt vinnerlodd</string>
+    <string name="trekning_draw_winner">Trekk vinnerlodd</string>
+    <string name="trekning_previous_winners">Forrige vinnere:</string>
+    <string name="trekning_all_winners">Alle vinnerlodd</string>
+    <string name="trekning_winner_ticket">Vinnerlodd:</string>
+    <string name="historikk_title">Vinnerlodd</string>
+    <string name="historikk_close">Lukk</string>
+
+    <string name="loddbokliste_edit">Rediger</string>
+    <string name="loddbokliste_delete">Slett</string>
+    <string name="loddbokliste_farge">Farge</string>
+    <string name="loddbokliste_bokstav">Bokstav</string>
+    <string name="loddbokliste_nummer">Nr</string>
+
+    <string name="color_red">Rød</string>
+    <string name="color_blue">Blå</string>
+    <string name="color_green">Grønn</string>
+    <string name="color_yellow">Gul</string>
+    <string name="color_orange">Oransje</string>
+    <string name="color_pink">Rosa</string>
+    <string name="color_purple">Lilla</string>
+    <string name="color_white">Hvit</string>
+
+    <string name="screen_title_loddboker">Loddbøker</string>
+    <string name="screen_title_legg_til_rediger">Legg til/rediger</string>
+    <string name="screen_title_trekk">Trekk</string>
+    <string name="screen_title_historikk">Historikk</string>
+    <string name="screen_title_settings">Innstillinger</string>
+    <string name="close">Lukk</string>
+</resources>

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Losbuch</string>
+    <string name="edit_loddbok">Losbuch bearbeiten</string>
+    <string name="add_loddbok">Losbuch hinzufügen</string>
+    <string name="save_loddbok">Losbuch speichern</string>
+    <string name="hovedskjerm_add_loddbok_prompt">Klicken Sie hier, um ein Losbuch hinzuzufügen</string>
+    <string name="hovedskjerm_add_loddbok_cd">Neues Losbuch hinzufügen</string>
+    <string name="hovedskjerm_welcome_title">Willkommen im Losbuch!</string>
+    <string name="hovedskjerm_welcome_description">Mit dieser App können Sie Lose aus Losbüchern ziehen, die auf Basaren oder anderen Veranstaltungen verkauft werden, bei denen Losbücher verwendet werden.</string>
+    <string name="legg_til_rediger_farge_label">Farbe des Losbuchs auswählen:</string>
+    <string name="legg_til_rediger_farge_error">Bitte wählen Sie eine Farbe aus.</string>
+    <string name="legg_til_rediger_bokstav_label">Buchstabe (A-Z)</string>
+    <string name="legg_til_rediger_bokstav_error">Bitte geben Sie einen einzelnen Buchstaben (A-Z) ein.</string>
+    <string name="legg_til_rediger_start_label">Startnummer</string>
+    <string name="legg_til_rediger_start_error">Bitte geben Sie eine gültige Nummer ein.</string>
+    <string name="legg_til_rediger_slutt_label">Endnummer</string>
+    <string name="legg_til_rediger_slutt_error">Die Endnummer darf nicht kleiner als die Startnummer sein.</string>
+    <string name="show_help">Hilfe anzeigen</string>
+    <string name="bokstav_help">Geben Sie den Buchstaben auf dem Losbuch ein.</string>
+    <string name="start_help">Geben Sie die erste Nummer im Losbuch ein. Wenn das Feld leer ist, wird es automatisch auf 1 gesetzt.</string>
+    <string name="end_help">Geben Sie die letzte Nummer im Losbuch ein. Wenn das Feld leer ist, wird es automatisch auf 100 gesetzt.</string>
+    <string name="legg_til_rediger_bokstav_placeholder"> </string>
+    <string name="legg_til_rediger_start_placeholder">1</string>
+    <string name="legg_til_rediger_slutt_placeholder">100</string>
+
+    <string name="settings_title">Einstellungen</string>
+    <string name="settings_reset_winning_ticket_list">Ziehung zurücksetzen</string>
+    <string name="settings_reset_raffle_ticket_book_entries">Alle Losbücher löschen</string>
+    <string name="settings_reset_dialog_title">Zurücksetzen bestätigen</string>
+    <string name="settings_reset_dialog_text">Alle Losbücher löschen?</string>
+    <string name="settings_reset_dialog_confirm">Löschen</string>
+    <string name="settings_reset_dialog_cancel">Abbrechen</string>
+    <string name="settings_language_use_system">Systemsprache verwenden</string>
+
+    <string name="trekning_no_tickets_left">Es sind keine Lose mehr zum Ziehen vorhanden.</string>
+    <string name="trekning_press_button_to_draw">Drücken Sie die Taste, um ein Gewinnlos zu ziehen.</string>
+    <string name="trekning_start_again">Ziehung erneut starten</string>
+    <string name="trekning_draw_new_winner">Neues Gewinnlos ziehen</string>
+    <string name="trekning_draw_winner">Gewinnlos ziehen</string>
+    <string name="trekning_previous_winners">Frühere Gewinner:</string>
+    <string name="trekning_all_winners">Alle Gewinnlose</string>
+    <string name="trekning_winner_ticket">Gewinnlos:</string>
+    <string name="historikk_title">Gewinnlose</string>
+    <string name="historikk_close">Schließen</string>
+
+    <string name="loddbokliste_edit">Bearbeiten</string>
+    <string name="loddbokliste_delete">Löschen</string>
+    <string name="loddbokliste_farge">Farbe</string>
+    <string name="loddbokliste_bokstav">Buchstabe</string>
+    <string name="loddbokliste_nummer">Nr.</string>
+
+    <string name="color_red">Rot</string>
+    <string name="color_blue">Blau</string>
+    <string name="color_green">Grün</string>
+    <string name="color_yellow">Gelb</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_pink">Rosa</string>
+    <string name="color_purple">Lila</string>
+    <string name="color_white">Weiß</string>
+
+    <string name="screen_title_loddboker">Losbücher</string>
+    <string name="screen_title_legg_til_rediger">Hinzufügen/Bearbeiten</string>
+    <string name="screen_title_trekk">Ziehen</string>
+    <string name="screen_title_historikk">Verlauf</string>
+    <string name="screen_title_settings">Einstellungen</string>
+</resources>
