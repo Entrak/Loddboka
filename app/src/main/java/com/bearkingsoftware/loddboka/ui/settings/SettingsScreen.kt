@@ -1,7 +1,6 @@
 package com.bearkingsoftware.loddboka.ui.settings
 
 import android.app.Activity
-import android.util.Log
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -24,20 +23,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import androidx.navigation.NavController
 import com.bearkingsoftware.loddboka.BuildConfig
 import com.bearkingsoftware.loddboka.LocaleManager
 import com.bearkingsoftware.loddboka.R
 import com.bearkingsoftware.loddboka.viewmodel.LoddbokViewModel
 import kotlinx.coroutines.launch
-import java.util.Locale
-
-private const val TAG = "LanguageDebug"
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SettingsScreen(
-    navController: NavController,
     viewModel: LoddbokViewModel
 ) {
     val uiState by viewModel.uiState.collectAsState()
@@ -45,8 +39,6 @@ fun SettingsScreen(
     val activity = context as? Activity
     val localeManager = remember { LocaleManager(context) }
     val scope = rememberCoroutineScope()
-    val currentLocale by localeManager.localeFlow.collectAsState(initial = Locale.getDefault())
-    val useSystemLanguage by localeManager.useSystemLanguageFlow.collectAsState(initial = true)
 
     if (uiState.showResetDialog) {
         AlertDialog(
@@ -93,18 +85,8 @@ fun SettingsScreen(
                     Text(text = stringResource(R.string.settings_reset_raffle_ticket_book_entries))
                 }
                 LanguageSelector(
-                    currentLocale = currentLocale,
-                    useSystemLanguage = useSystemLanguage,
-                    onUseSystemLanguageChange = { useSystem ->
-                        scope.launch {
-                            Log.d(TAG, "SettingsScreen: 'Use system language' toggled to $useSystem.")
-                            localeManager.setUseSystemLanguage(useSystem)
-                            activity?.recreate()
-                        }
-                    },
                     onLocaleChange = { locale ->
                         scope.launch {
-                            Log.d(TAG, "SettingsScreen: Language button clicked for '${locale.toLanguageTag()}'.")
                             localeManager.setLocale(locale)
                             activity?.recreate()
                         }

@@ -31,6 +31,7 @@
     <string name="settings_reset_dialog_confirm">Supprimer</string>
     <string name="settings_reset_dialog_cancel">Annuler</string>
     <string name="settings_language_use_system">Utiliser la langue du système</string>
+    <string name="settings_language_select">Sélectionner la langue</string>
 
     <string name="trekning_no_tickets_left">Il n\'y a plus de tickets à tirer.</string>
     <string name="trekning_press_button_to_draw">Appuyez sur le bouton pour tirer un ticket gagnant.</string>
@@ -63,4 +64,5 @@
     <string name="screen_title_trekk">Tirage</string>
     <string name="screen_title_historikk">Historique</string>
     <string name="screen_title_settings">Paramètres</string>
+    <string name="close">Fermer</string>
 </resources>

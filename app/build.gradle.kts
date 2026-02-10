@@ -30,8 +30,8 @@ android {
         applicationId = "com.bearkingsoftware.loddboka"
         minSdk = 24
         targetSdk = 36
-        versionCode = 10
-        versionName = "0.91(Beta)"
+        versionCode = 11
+        versionName = "0.91.260210"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -74,8 +74,8 @@ dependencies {
     // Replaced extended with core to reduce app size
     implementation(libs.androidx.compose.material.icons.extended)
     implementation(libs.androidx.navigation.compose)
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("androidx.datastore:datastore-preferences:1.0.0")
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.datastore.preferences)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))

@@ -31,6 +31,7 @@
     <string name="settings_reset_dialog_confirm">Slett</string>
     <string name="settings_reset_dialog_cancel">Avbryt</string>
     <string name="settings_language_use_system">Bruk systemspråk</string>
+    <string name="settings_language_select">Velg språk</string>
 
     <string name="trekning_no_tickets_left">Det er ingen flere lodd igjen å trekke.</string>
     <string name="trekning_press_button_to_draw">Trykk på knappen for å trekke et vinnerlodd.</string>

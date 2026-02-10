@@ -31,6 +31,7 @@
     <string name="settings_reset_dialog_confirm">Poista</string>
     <string name="settings_reset_dialog_cancel">Peruuta</string>
     <string name="settings_language_use_system">Käytä järjestelmän kieltä</string>
+    <string name="settings_language_select">Valitse kieli</string>
 
     <string name="trekning_no_tickets_left">Arvottavia arpoja ei ole enää jäljellä.</string>
     <string name="trekning_press_button_to_draw">Paina painiketta arpoaksesi voittonumeron.</string>
@@ -63,4 +64,5 @@
     <string name="screen_title_trekk">Arvo</string>
     <string name="screen_title_historikk">Historia</string>
     <string name="screen_title_settings">Asetukset</string>
+    <string name="close">Sulje</string>
 </resources>

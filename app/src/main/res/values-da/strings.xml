@@ -31,6 +31,7 @@
     <string name="settings_reset_dialog_confirm">Slet</string>
     <string name="settings_reset_dialog_cancel">Annuller</string>
     <string name="settings_language_use_system">Brug systemsprog</string>
+    <string name="settings_language_select">Vælg sprog</string>
 
     <string name="trekning_no_tickets_left">Der er ikke flere lodder at trække.</string>
     <string name="trekning_press_button_to_draw">Tryk på knappen for at trække en vinderlodseddel.</string>
@@ -63,4 +64,5 @@
     <string name="screen_title_trekk">Træk</string>
     <string name="screen_title_historikk">Historik</string>
     <string name="screen_title_settings">Indstillinger</string>
+    <string name="close">Luk</string>
 </resources>

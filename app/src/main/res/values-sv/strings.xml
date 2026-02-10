@@ -31,6 +31,7 @@
     <string name="settings_reset_dialog_confirm">Ta bort</string>
     <string name="settings_reset_dialog_cancel">Avbryt</string>
     <string name="settings_language_use_system">Använd systemspråk</string>
+    <string name="settings_language_select">Välj språk</string>
 
     <string name="trekning_no_tickets_left">Det finns inga fler lotter att dra.</string>
     <string name="trekning_press_button_to_draw">Tryck på knappen för att dra en vinstlott.</string>
@@ -63,4 +64,5 @@
     <string name="screen_title_trekk">Dra</string>
     <string name="screen_title_historikk">Historik</string>
     <string name="screen_title_settings">Inställningar</string>
+    <string name="close">Stäng</string>
 </resources>

@@ -31,6 +31,7 @@
     <string name="settings_reset_dialog_confirm">Sihko</string>
     <string name="settings_reset_dialog_cancel">Gaskkalduhte</string>
     <string name="settings_language_use_system">Geavat systemgiela</string>
+    <string name="settings_language_select">Vállje giela</string>
 
     <string name="trekning_no_tickets_left">Eai leat eanet vuorbbat mat sáhttet geassojuvvot.</string>
     <string name="trekning_press_button_to_draw">Deaddel boalu vai geasát vuoiti vuorbbi.</string>
@@ -63,4 +64,5 @@
     <string name="screen_title_trekk">Geasse</string>
     <string name="screen_title_historikk">Historihkka</string>
     <string name="screen_title_settings">Heivehusat</string>
+    <string name="close">Dahppat</string>
 </resources>

@@ -1,15 +1,15 @@
 package com.bearkingsoftware.loddboka
 
-import android.app.LocaleManager as AndroidLocaleManager
 import android.content.Context
 import android.content.res.Resources
-import android.os.Build
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
+import com.bearkingsoftware.loddboka.ui.settings.Language
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import java.util.Locale
 
@@ -19,44 +19,38 @@ class LocaleManager(private val context: Context) {
 
     companion object {
         private val LANGUAGE_KEY = stringPreferencesKey("language_key")
-        private val USE_SYSTEM_LANGUAGE_KEY = booleanPreferencesKey("use_system_language_key")
+        val IS_FIRST_RUN_KEY = booleanPreferencesKey("is_first_run")
     }
 
-    private val supportedLanguages = listOf("en", "nb", "sv", "da", "fi", "se", "fr", "de")
+    private val supportedLanguages = Language.entries.map { it.code }
 
     val localeFlow = context.dataStore.data.map { preferences ->
-        val useSystemLanguage = preferences[USE_SYSTEM_LANGUAGE_KEY] ?: true
-        if (useSystemLanguage) {
-            val systemLocale = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-                val localeManager = context.getSystemService(Context.LOCALE_SERVICE) as AndroidLocaleManager
-                val systemLocales = localeManager.systemLocales
-                (0 until systemLocales.size()).map { systemLocales[it] }.firstOrNull { supportedLanguages.contains(it.language) }
-            } else {
-                @Suppress("DEPRECATION")
-                val systemLocale = Resources.getSystem().configuration.locale
-                if (supportedLanguages.contains(systemLocale.language)) systemLocale else null
-            }
-            systemLocale ?: Locale.forLanguageTag("en")
-        } else {
-            val language = preferences[LANGUAGE_KEY] ?: "en"
+        val language = preferences[LANGUAGE_KEY]
+        if (language != null) {
             Locale.forLanguageTag(language)
+        } else {
+            getSystemLocale() ?: Locale.forLanguageTag(Language.ENGLISH.code)
         }
     }
 
-    val useSystemLanguageFlow = context.dataStore.data.map { preferences ->
-        preferences[USE_SYSTEM_LANGUAGE_KEY] ?: true
+    private fun getSystemLocale(): Locale? {
+        val systemLanguage = Resources.getSystem().configuration.locales[0].language
+        val supportedLanguage = supportedLanguages.find { it == systemLanguage }
+        return if (supportedLanguage != null) {
+            Locale.forLanguageTag(supportedLanguage)
+        } else {
+            null
+        }
+    }
+
+    suspend fun isFirstRun(): Boolean {
+        return context.dataStore.data.map { it[IS_FIRST_RUN_KEY] ?: true }.first()
     }
 
     suspend fun setLocale(locale: Locale) {
         context.dataStore.edit { settings ->
             settings[LANGUAGE_KEY] = locale.toLanguageTag()
-            settings[USE_SYSTEM_LANGUAGE_KEY] = false
-        }
-    }
-
-    suspend fun setUseSystemLanguage(useSystemLanguage: Boolean) {
-        context.dataStore.edit { settings ->
-            settings[USE_SYSTEM_LANGUAGE_KEY] = useSystemLanguage
+            settings[IS_FIRST_RUN_KEY] = false
         }
     }
 }
