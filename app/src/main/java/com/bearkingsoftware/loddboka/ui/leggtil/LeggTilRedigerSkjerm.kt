@@ -46,7 +46,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
@@ -54,14 +53,18 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.core.graphics.ColorUtils
 import androidx.navigation.NavController
 import com.bearkingsoftware.loddboka.R
 import com.bearkingsoftware.loddboka.data.Farge
 import com.bearkingsoftware.loddboka.data.Loddbok
+import com.bearkingsoftware.loddboka.ui.color
+import com.bearkingsoftware.loddboka.ui.getContrastingTextColor
 import com.bearkingsoftware.loddboka.ui.toStringResource
 import com.bearkingsoftware.loddboka.viewmodel.LoddbokViewModel
 
+/** Valid ticket numbers on save: reject pathological Int.MIN/MAX spans (P1-3). */
+private const val TICKET_NUMBER_MIN = 1
+private const val TICKET_NUMBER_MAX = 1_000_000
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun LeggTilRedigerSkjerm(
@@ -124,13 +127,16 @@ fun LeggTilRedigerSkjerm(
             val endInt = if (end.text.isBlank()) 100 else end.text.toIntOrNull()
 
             bokstavError = bokstavChar == null || bokstavChar !in 'A'..'Z'
-            startError = startInt == null
-            endError = endInt == null || (startInt != null && endInt < startInt)
+            // Bounds 1..1_000_000: keeps draw Long-math safe and rejects Int.MIN/MAX spans.
+            startError = startInt == null || startInt !in TICKET_NUMBER_MIN..TICKET_NUMBER_MAX
+            endError = endInt == null ||
+                endInt !in TICKET_NUMBER_MIN..TICKET_NUMBER_MAX ||
+                (startInt != null && endInt < startInt)
             fargeError = selectedFarge == null
 
             if (!bokstavError && !startError && !endError && !fargeError) {
                 val loddbok = Loddbok(
-                    id = if (isEditing) id else System.currentTimeMillis(),
+                    id = if (isEditing) id else 0L,
                     farge = selectedFarge!!,
                     bokstav = bokstavChar!!,
                     start = startInt!!,
@@ -170,13 +176,6 @@ fun LeggTilRedigerSkjermContent(
     var showBokstavHelp by remember { mutableStateOf(false) }
     var showStartHelp by remember { mutableStateOf(false) }
     var showEndHelp by remember { mutableStateOf(false) }
-
-    fun getTextColor(backgroundColor: Color): Color {
-        val backgroundArgb = backgroundColor.toArgb()
-        val contrastWithWhite = ColorUtils.calculateContrast(Color.White.toArgb(), backgroundArgb)
-        val contrastWithBlack = ColorUtils.calculateContrast(Color.Black.toArgb(), backgroundArgb)
-        return if (contrastWithWhite > contrastWithBlack) Color.White else Color.Black
-    }
 
     Scaffold(
         topBar = {
@@ -242,7 +241,7 @@ fun LeggTilRedigerSkjermContent(
                         ) {
                             Text(
                                 text = farge.toStringResource(),
-                                color = getTextColor(farge.color)
+                                color = getContrastingTextColor(farge.color)
                             )
                         }
                     }

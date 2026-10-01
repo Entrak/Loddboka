@@ -12,9 +12,9 @@
     <string name="legg_til_rediger_bokstav_label">Bogstav (A-Å)</string>
     <string name="legg_til_rediger_bokstav_error">Indtast et enkelt bogstav (A-Å).</string>
     <string name="legg_til_rediger_start_label">Startnummer</string>
-    <string name="legg_til_rediger_start_error">Indtast et gyldigt tal.</string>
+    <string name="legg_til_rediger_start_error">Indtast et tal fra 1 til 1 000 000.</string>
     <string name="legg_til_rediger_slutt_label">Slutnummer</string>
-    <string name="legg_til_rediger_slutt_error">Slutnummer kan ikke være lavere end startnummer.</string>
+    <string name="legg_til_rediger_slutt_error">Slut skal være mindst start og højst 1 000 000.</string>
     <string name="show_help">Vis hjælp</string>
     <string name="bokstav_help">Indtast det bogstav, der står på lodseddelbogen.</string>
     <string name="start_help">Indtast det første nummer i lodseddelbogen. Hvis feltet er tomt, sættes det automatisk til 1.</string>
@@ -32,12 +32,18 @@
     <string name="settings_reset_dialog_cancel">Annuller</string>
     <string name="settings_language_use_system">Brug systemsprog</string>
     <string name="settings_language_select">Vælg sprog</string>
-
-    <string name="trekning_no_tickets_left">Der er ikke flere lodder at trække.</string>
+    <string name="trekning_no_tickets_left">Ingen flere lodder tilgængelige.</string>
+    <string name="trekning_empty_pool_title">Trækning færdig</string>
+    <string name="trekning_see_winners">Se vindere</string>
+    <string name="trekning_new_draw">Ny trækning</string>
+    <string name="trekning_new_draw_confirm_title">Ny trækning?</string>
+    <string name="trekning_new_draw_confirm_text">Alle lodder bliver tilgængelige til trækning igen. Vinderhistorikken bevares. Loddbøgerne bevares.</string>
+    <string name="trekning_new_draw_confirm">Start</string>
     <string name="trekning_press_button_to_draw">Tryk på knappen for at trække en vinderlodseddel.</string>
     <string name="trekning_start_again">Start trækningen forfra</string>
     <string name="trekning_draw_new_winner">Træk ny vinderlodseddel</string>
     <string name="trekning_draw_winner">Træk vinderlodseddel</string>
+    <string name="trekning_finished">Afslut</string>
     <string name="trekning_previous_winners">Tidligere vindere:</string>
     <string name="trekning_all_winners">Alle vinderlodsedler</string>
     <string name="trekning_winner_ticket">Vinderlodseddel:</string>
@@ -55,7 +61,7 @@
     <string name="color_green">Grøn</string>
     <string name="color_yellow">Gul</string>
     <string name="color_orange">Orange</string>
-    <string name="color_pink">Pink</string>
+    <string name="color_pink">Lyserød</string>
     <string name="color_purple">Lilla</string>
     <string name="color_white">Hvid</string>
 
@@ -65,4 +71,18 @@
     <string name="screen_title_historikk">Historik</string>
     <string name="screen_title_settings">Indstillinger</string>
     <string name="close">Luk</string>
+    <string name="tester_tasks_title">Tester tasks</string>
+    <string name="tester_tasks_settings_button">Tester tasks</string>
+    <string name="tester_tasks_intro">Google needs closed testers who stay opted in and open the app for 14 days. Complete this checklist once, then open Loddboka every other day.</string>
+    <string name="tester_tasks_checklist_heading">Checklist (~5 min)</string>
+    <string name="tester_task_add_books">Add 2 raffle books (different color/letter)</string>
+    <string name="tester_task_draw">Draw 3 winning tickets</string>
+    <string name="tester_task_language">Change language in Settings</string>
+    <string name="tester_task_delete">Delete one raffle book (confirm the dialog)</string>
+    <string name="tester_send_feedback">Send feedback (Google Form)</string>
+    <string name="tester_email_feedback">Email feedback instead</string>
+    <string name="tester_tasks_footer">Stay opted in for the full 14 days. Opt-in alone is not enough.</string>
+    <string name="tester_feedback_email" translatable="false">bearkingsoftware@gmail.com</string>
+    <string name="tester_feedback_form_url" translatable="false">https://docs.google.com/forms/d/e/1FAIpQLSc4EgzBbBqMzNAjZM7NR_ZQ0jlUipzet9ZHrkiSz7Qkmumv9w/viewform</string>
+    <string name="tester_no_app">Ingen app fundet der kan åbne dette link.</string>
 </resources>

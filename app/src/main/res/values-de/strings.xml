@@ -12,9 +12,9 @@
     <string name="legg_til_rediger_bokstav_label">Buchstabe (A-Z)</string>
     <string name="legg_til_rediger_bokstav_error">Bitte geben Sie einen einzelnen Buchstaben (A-Z) ein.</string>
     <string name="legg_til_rediger_start_label">Startnummer</string>
-    <string name="legg_til_rediger_start_error">Bitte geben Sie eine gültige Nummer ein.</string>
+    <string name="legg_til_rediger_start_error">Bitte eine Zahl von 1 bis 1 000 000 eingeben.</string>
     <string name="legg_til_rediger_slutt_label">Endnummer</string>
-    <string name="legg_til_rediger_slutt_error">Die Endnummer darf nicht kleiner als die Startnummer sein.</string>
+    <string name="legg_til_rediger_slutt_error">Ende muss mindestens Start und höchstens 1 000 000 sein.</string>
     <string name="show_help">Hilfe anzeigen</string>
     <string name="bokstav_help">Geben Sie den Buchstaben auf dem Losbuch ein.</string>
     <string name="start_help">Geben Sie die erste Nummer im Losbuch ein. Wenn das Feld leer ist, wird es automatisch auf 1 gesetzt.</string>
@@ -32,12 +32,18 @@
     <string name="settings_reset_dialog_cancel">Abbrechen</string>
     <string name="settings_language_use_system">Systemsprache verwenden</string>
     <string name="settings_language_select">Sprache auswählen</string>
-
-    <string name="trekning_no_tickets_left">Es sind keine Lose mehr zum Ziehen vorhanden.</string>
+    <string name="trekning_no_tickets_left">Keine Lose mehr verfügbar.</string>
+    <string name="trekning_empty_pool_title">Ziehung beendet</string>
+    <string name="trekning_see_winners">Gewinner anzeigen</string>
+    <string name="trekning_new_draw">Neue Ziehung</string>
+    <string name="trekning_new_draw_confirm_title">Neue Ziehung?</string>
+    <string name="trekning_new_draw_confirm_text">Alle Lose sind wieder ziehbar. Die Gewinnerhistorie bleibt erhalten. Die Losbücher bleiben erhalten.</string>
+    <string name="trekning_new_draw_confirm">Starten</string>
     <string name="trekning_press_button_to_draw">Drücken Sie die Taste, um ein Gewinnlos zu ziehen.</string>
     <string name="trekning_start_again">Ziehung erneut starten</string>
     <string name="trekning_draw_new_winner">Neues Gewinnlos ziehen</string>
     <string name="trekning_draw_winner">Gewinnlos ziehen</string>
+    <string name="trekning_finished">Beenden</string>
     <string name="trekning_previous_winners">Frühere Gewinner:</string>
     <string name="trekning_all_winners">Alle Gewinnlose</string>
     <string name="trekning_winner_ticket">Gewinnlos:</string>
@@ -65,4 +71,18 @@
     <string name="screen_title_historikk">Verlauf</string>
     <string name="screen_title_settings">Einstellungen</string>
     <string name="close">Schließen</string>
+    <string name="tester_tasks_title">Tester tasks</string>
+    <string name="tester_tasks_settings_button">Tester tasks</string>
+    <string name="tester_tasks_intro">Google needs closed testers who stay opted in and open the app for 14 days. Complete this checklist once, then open Loddboka every other day.</string>
+    <string name="tester_tasks_checklist_heading">Checklist (~5 min)</string>
+    <string name="tester_task_add_books">Add 2 raffle books (different color/letter)</string>
+    <string name="tester_task_draw">Draw 3 winning tickets</string>
+    <string name="tester_task_language">Change language in Settings</string>
+    <string name="tester_task_delete">Delete one raffle book (confirm the dialog)</string>
+    <string name="tester_send_feedback">Send feedback (Google Form)</string>
+    <string name="tester_email_feedback">Email feedback instead</string>
+    <string name="tester_tasks_footer">Stay opted in for the full 14 days. Opt-in alone is not enough.</string>
+    <string name="tester_feedback_email" translatable="false">bearkingsoftware@gmail.com</string>
+    <string name="tester_feedback_form_url" translatable="false">https://docs.google.com/forms/d/e/1FAIpQLSc4EgzBbBqMzNAjZM7NR_ZQ0jlUipzet9ZHrkiSz7Qkmumv9w/viewform</string>
+    <string name="tester_no_app">Keine App gefunden, die diesen Link öffnen kann.</string>
 </resources>

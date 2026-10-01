@@ -12,9 +12,9 @@
     <string name="legg_til_rediger_bokstav_label">Lettre (A-Z)</string>
     <string name="legg_til_rediger_bokstav_error">Veuillez saisir une seule lettre (A-Z).</string>
     <string name="legg_til_rediger_start_label">Numéro de début</string>
-    <string name="legg_til_rediger_start_error">Veuillez saisir un numéro valide.</string>
+    <string name="legg_til_rediger_start_error">Veuillez saisir un nombre de 1 à 1 000 000.</string>
     <string name="legg_til_rediger_slutt_label">Numéro de fin</string>
-    <string name="legg_til_rediger_slutt_error">Le numéro de fin ne peut pas être inférieur au numéro de début.</string>
+    <string name="legg_til_rediger_slutt_error">La fin doit être au moins le début et au plus 1 000 000.</string>
     <string name="show_help">Afficher l\'aide</string>
     <string name="bokstav_help">Saisissez la lettre figurant sur le carnet de tombola.</string>
     <string name="start_help">Saisissez le premier numéro du carnet de tombola. Si le champ est vide, il sera automatiquement défini sur 1.</string>
@@ -32,12 +32,18 @@
     <string name="settings_reset_dialog_cancel">Annuler</string>
     <string name="settings_language_use_system">Utiliser la langue du système</string>
     <string name="settings_language_select">Sélectionner la langue</string>
-
-    <string name="trekning_no_tickets_left">Il n\'y a plus de tickets à tirer.</string>
+    <string name="trekning_no_tickets_left">Plus de tickets disponibles.</string>
+    <string name="trekning_empty_pool_title">Tirage terminé</string>
+    <string name="trekning_see_winners">Voir les gagnants</string>
+    <string name="trekning_new_draw">Nouveau tirage</string>
+    <string name="trekning_new_draw_confirm_title">Nouveau tirage ?</string>
+    <string name="trekning_new_draw_confirm_text">Tous les tickets pourront à nouveau être tirés. L\'historique des gagnants est conservé. Les carnets sont conservés.</string>
+    <string name="trekning_new_draw_confirm">Démarrer</string>
     <string name="trekning_press_button_to_draw">Appuyez sur le bouton pour tirer un ticket gagnant.</string>
     <string name="trekning_start_again">Recommencer le tirage</string>
     <string name="trekning_draw_new_winner">Tirer un nouveau ticket gagnant</string>
     <string name="trekning_draw_winner">Tirer un ticket gagnant</string>
+    <string name="trekning_finished">Terminé</string>
     <string name="trekning_previous_winners">Gagnants précédents :</string>
     <string name="trekning_all_winners">Tous les tickets gagnants</string>
     <string name="trekning_winner_ticket">Ticket gagnant :</string>
@@ -65,4 +71,18 @@
     <string name="screen_title_historikk">Historique</string>
     <string name="screen_title_settings">Paramètres</string>
     <string name="close">Fermer</string>
+    <string name="tester_tasks_title">Tester tasks</string>
+    <string name="tester_tasks_settings_button">Tester tasks</string>
+    <string name="tester_tasks_intro">Google needs closed testers who stay opted in and open the app for 14 days. Complete this checklist once, then open Loddboka every other day.</string>
+    <string name="tester_tasks_checklist_heading">Checklist (~5 min)</string>
+    <string name="tester_task_add_books">Add 2 raffle books (different color/letter)</string>
+    <string name="tester_task_draw">Draw 3 winning tickets</string>
+    <string name="tester_task_language">Change language in Settings</string>
+    <string name="tester_task_delete">Delete one raffle book (confirm the dialog)</string>
+    <string name="tester_send_feedback">Send feedback (Google Form)</string>
+    <string name="tester_email_feedback">Email feedback instead</string>
+    <string name="tester_tasks_footer">Stay opted in for the full 14 days. Opt-in alone is not enough.</string>
+    <string name="tester_feedback_email" translatable="false">bearkingsoftware@gmail.com</string>
+    <string name="tester_feedback_form_url" translatable="false">https://docs.google.com/forms/d/e/1FAIpQLSc4EgzBbBqMzNAjZM7NR_ZQ0jlUipzet9ZHrkiSz7Qkmumv9w/viewform</string>
+    <string name="tester_no_app">Aucune application trouvée pour ouvrir ce lien.</string>
 </resources>

@@ -12,9 +12,9 @@
     <string name="legg_til_rediger_bokstav_label">Kirjain (A-Ö)</string>
     <string name="legg_til_rediger_bokstav_error">Anna yksi kirjain (A-Ö).</string>
     <string name="legg_til_rediger_start_label">Aloitusnumero</string>
-    <string name="legg_til_rediger_start_error">Anna kelvollinen numero.</string>
+    <string name="legg_til_rediger_start_error">Anna numero väliltä 1–1 000 000.</string>
     <string name="legg_til_rediger_slutt_label">Lopetusnumero</string>
-    <string name="legg_til_rediger_slutt_error">Lopetusnumero ei voi olla pienempi kuin aloitusnumero.</string>
+    <string name="legg_til_rediger_slutt_error">Lopun on oltava vähintään alku ja enintään 1 000 000.</string>
     <string name="show_help">Näytä ohje</string>
     <string name="bokstav_help">Anna arpakirjassa oleva kirjain.</string>
     <string name="start_help">Anna arpakirjan ensimmäinen numero. Jos kenttä on tyhjä, se asetetaan automaattisesti arvoon 1.</string>
@@ -32,12 +32,18 @@
     <string name="settings_reset_dialog_cancel">Peruuta</string>
     <string name="settings_language_use_system">Käytä järjestelmän kieltä</string>
     <string name="settings_language_select">Valitse kieli</string>
-
-    <string name="trekning_no_tickets_left">Arvottavia arpoja ei ole enää jäljellä.</string>
+    <string name="trekning_no_tickets_left">Arpoja ei ole enää saatavilla.</string>
+    <string name="trekning_empty_pool_title">Arvonta valmis</string>
+    <string name="trekning_see_winners">Näytä voittajat</string>
+    <string name="trekning_new_draw">Uusi arvonta</string>
+    <string name="trekning_new_draw_confirm_title">Uusi arvonta?</string>
+    <string name="trekning_new_draw_confirm_text">Kaikki arvat ovat taas arvottavissa. Voittohistoria säilytetään. Arpakirjat säilytetään.</string>
+    <string name="trekning_new_draw_confirm">Aloita</string>
     <string name="trekning_press_button_to_draw">Paina painiketta arpoaksesi voittonumeron.</string>
     <string name="trekning_start_again">Aloita arvonta alusta</string>
     <string name="trekning_draw_new_winner">Arvo uusi voittonumero</string>
     <string name="trekning_draw_winner">Arvo voittonumero</string>
+    <string name="trekning_finished">Valmis</string>
     <string name="trekning_previous_winners">Aiemmat voittajat:</string>
     <string name="trekning_all_winners">Kaikki voittonumerot</string>
     <string name="trekning_winner_ticket">Voittonumero:</string>
@@ -65,4 +71,18 @@
     <string name="screen_title_historikk">Historia</string>
     <string name="screen_title_settings">Asetukset</string>
     <string name="close">Sulje</string>
+    <string name="tester_tasks_title">Tester tasks</string>
+    <string name="tester_tasks_settings_button">Tester tasks</string>
+    <string name="tester_tasks_intro">Google needs closed testers who stay opted in and open the app for 14 days. Complete this checklist once, then open Loddboka every other day.</string>
+    <string name="tester_tasks_checklist_heading">Checklist (~5 min)</string>
+    <string name="tester_task_add_books">Add 2 raffle books (different color/letter)</string>
+    <string name="tester_task_draw">Draw 3 winning tickets</string>
+    <string name="tester_task_language">Change language in Settings</string>
+    <string name="tester_task_delete">Delete one raffle book (confirm the dialog)</string>
+    <string name="tester_send_feedback">Send feedback (Google Form)</string>
+    <string name="tester_email_feedback">Email feedback instead</string>
+    <string name="tester_tasks_footer">Stay opted in for the full 14 days. Opt-in alone is not enough.</string>
+    <string name="tester_feedback_email" translatable="false">bearkingsoftware@gmail.com</string>
+    <string name="tester_feedback_form_url" translatable="false">https://docs.google.com/forms/d/e/1FAIpQLSc4EgzBbBqMzNAjZM7NR_ZQ0jlUipzet9ZHrkiSz7Qkmumv9w/viewform</string>
+    <string name="tester_no_app">Linkin avaavaa sovellusta ei löytynyt.</string>
 </resources>

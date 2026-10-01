@@ -12,9 +12,9 @@
     <string name="legg_til_rediger_bokstav_label">Bokstav (A-Ö)</string>
     <string name="legg_til_rediger_bokstav_error">Ange en enskild bokstav (A-Ö).</string>
     <string name="legg_til_rediger_start_label">Startnummer</string>
-    <string name="legg_til_rediger_start_error">Ange ett giltigt nummer.</string>
+    <string name="legg_til_rediger_start_error">Ange ett nummer från 1 till 1 000 000.</string>
     <string name="legg_til_rediger_slutt_label">Slutnummer</string>
-    <string name="legg_til_rediger_slutt_error">Slutnumret kan inte vara lägre än startnumret.</string>
+    <string name="legg_til_rediger_slutt_error">Slut måste vara minst start och högst 1 000 000.</string>
     <string name="show_help">Visa hjälp</string>
     <string name="bokstav_help">Ange bokstaven som finns på lotteriboken.</string>
     <string name="start_help">Ange det första numret i lotteriboken. Om fältet är tomt, sätts det automatiskt till 1.</string>
@@ -32,12 +32,18 @@
     <string name="settings_reset_dialog_cancel">Avbryt</string>
     <string name="settings_language_use_system">Använd systemspråk</string>
     <string name="settings_language_select">Välj språk</string>
-
-    <string name="trekning_no_tickets_left">Det finns inga fler lotter att dra.</string>
+    <string name="trekning_no_tickets_left">Inga fler lotter tillgängliga.</string>
+    <string name="trekning_empty_pool_title">Dragning klar</string>
+    <string name="trekning_see_winners">Se vinnare</string>
+    <string name="trekning_new_draw">Ny dragning</string>
+    <string name="trekning_new_draw_confirm_title">Ny dragning?</string>
+    <string name="trekning_new_draw_confirm_text">Alla lotter blir dragbara igen. Vinnarhistoriken behålls. Lotthäftena behålls.</string>
+    <string name="trekning_new_draw_confirm">Starta</string>
     <string name="trekning_press_button_to_draw">Tryck på knappen för att dra en vinstlott.</string>
     <string name="trekning_start_again">Starta dragningen på nytt</string>
     <string name="trekning_draw_new_winner">Dra ny vinstlott</string>
     <string name="trekning_draw_winner">Dra vinstlott</string>
+    <string name="trekning_finished">Avsluta</string>
     <string name="trekning_previous_winners">Tidigare vinnare:</string>
     <string name="trekning_all_winners">Alla vinstlotter</string>
     <string name="trekning_winner_ticket">Vinstlott:</string>
@@ -65,4 +71,18 @@
     <string name="screen_title_historikk">Historik</string>
     <string name="screen_title_settings">Inställningar</string>
     <string name="close">Stäng</string>
+    <string name="tester_tasks_title">Tester tasks</string>
+    <string name="tester_tasks_settings_button">Tester tasks</string>
+    <string name="tester_tasks_intro">Google needs closed testers who stay opted in and open the app for 14 days. Complete this checklist once, then open Loddboka every other day.</string>
+    <string name="tester_tasks_checklist_heading">Checklist (~5 min)</string>
+    <string name="tester_task_add_books">Add 2 raffle books (different color/letter)</string>
+    <string name="tester_task_draw">Draw 3 winning tickets</string>
+    <string name="tester_task_language">Change language in Settings</string>
+    <string name="tester_task_delete">Delete one raffle book (confirm the dialog)</string>
+    <string name="tester_send_feedback">Send feedback (Google Form)</string>
+    <string name="tester_email_feedback">Email feedback instead</string>
+    <string name="tester_tasks_footer">Stay opted in for the full 14 days. Opt-in alone is not enough.</string>
+    <string name="tester_feedback_email" translatable="false">bearkingsoftware@gmail.com</string>
+    <string name="tester_feedback_form_url" translatable="false">https://docs.google.com/forms/d/e/1FAIpQLSc4EgzBbBqMzNAjZM7NR_ZQ0jlUipzet9ZHrkiSz7Qkmumv9w/viewform</string>
+    <string name="tester_no_app">Ingen app hittades som kan öppna den här länken.</string>
 </resources>
