@@ -30,8 +30,8 @@ android {
         applicationId = "com.bearkingsoftware.loddboka"
         minSdk = 24
         targetSdk = 36
-        versionCode = 11
-        versionName = "0.91.260210"
+        versionCode = 16
+        versionName = "0.96.261001"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -51,28 +51,42 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     buildFeatures {
         compose = true
         buildConfig = true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.3"
+
+    // Keep all language resources in the base APK (no Play config.* language splits).
+    // Otherwise English only lives in config.en and missing that split falls back to
+    // unqualified values/ (historically Norwegian).
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
     }
 }
 
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.material3)
-    // Replaced extended with core to reduce app size
-    implementation(libs.androidx.compose.material.icons.extended)
+    // Core icons only — extended set bloats the APK for a handful of glyphs
+    implementation(libs.androidx.compose.material.icons.core)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.datastore.preferences)
