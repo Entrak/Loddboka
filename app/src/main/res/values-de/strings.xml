@@ -6,7 +6,9 @@
     <string name="hovedskjerm_add_loddbok_prompt">Klicken Sie hier, um ein Losbuch hinzuzufügen</string>
     <string name="hovedskjerm_add_loddbok_cd">Neues Losbuch hinzufügen</string>
     <string name="hovedskjerm_welcome_title">Willkommen im Losbuch!</string>
-    <string name="hovedskjerm_welcome_description">Mit dieser App können Sie Lose aus Losbüchern ziehen, die auf Basaren oder anderen Veranstaltungen verkauft werden, bei denen Losbücher verwendet werden.</string>
+    <string name="hovedskjerm_welcome_description">Loddboka is for drawing tickets from raffle books (loddbøker) at bazaars and fundraisers. Add each book by color and letter, draw winners, reset when you need a new round. Free, works offline — no account required.</string>
+    <string name="first_run_intro_title">What is Loddboka?</string>
+    <string name="first_run_intro_body">Loddboka is for drawing tickets from raffle books (loddbøker) at bazaars and fundraisers. Add each book by color and letter, draw winners, reset when you need a new round. Free, works offline — no account required.</string>
     <string name="legg_til_rediger_farge_label">Farbe des Losbuchs auswählen:</string>
     <string name="legg_til_rediger_farge_error">Bitte wählen Sie eine Farbe aus.</string>
     <string name="legg_til_rediger_bokstav_label">Buchstabe (A-Z)</string>

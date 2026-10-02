@@ -6,7 +6,9 @@
     <string name="hovedskjerm_add_loddbok_prompt">Deaddel dása vai lasihat vuorbegirjji</string>
     <string name="hovedskjerm_add_loddbok_cd">Lasit ođđa vuorbegirjji</string>
     <string name="hovedskjerm_welcome_title">Bures boahtin Vuorbegirjái!</string>
-    <string name="hovedskjerm_welcome_description">Dát áppa litna du geassit vuorbbiid vuorbegirjjiin mat vuvdojuvvojit basárain dahje eará lágidemiin gos vuorbegirjjit adnojit.</string>
+    <string name="hovedskjerm_welcome_description">Loddboka is for drawing tickets from raffle books (loddbøker) at bazaars and fundraisers. Add each book by color and letter, draw winners, reset when you need a new round. Free, works offline — no account required.</string>
+    <string name="first_run_intro_title">What is Loddboka?</string>
+    <string name="first_run_intro_body">Loddboka is for drawing tickets from raffle books (loddbøker) at bazaars and fundraisers. Add each book by color and letter, draw winners, reset when you need a new round. Free, works offline — no account required.</string>
     <string name="legg_til_rediger_farge_label">Vállje vuorbegirjji ivnni:</string>
     <string name="legg_til_rediger_farge_error">Vállje ivnni.</string>
     <string name="legg_til_rediger_bokstav_label">Bustávva (A-Å)</string>

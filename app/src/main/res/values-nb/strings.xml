@@ -6,7 +6,9 @@
     <string name="hovedskjerm_add_loddbok_prompt">Trykk her for å legge til loddbok</string>
     <string name="hovedskjerm_add_loddbok_cd">Legg til ny loddbok</string>
     <string name="hovedskjerm_welcome_title">Velkommen til Loddboka!</string>
-    <string name="hovedskjerm_welcome_description">Denne appen lar deg trekke loddbøker solgt på basarer eller andre tilstelninger hvor loddbøker benyttes.</string>
+    <string name="hovedskjerm_welcome_description">Loddboka er til å trekke lodd fra loddbøker på basarer og innsamlingsaksjoner. Legg inn hver bok med farge og bokstav, trekk vinnere, og nullstill når du trenger en ny runde. Gratis, fungerer uten nett — ingen konto nødvendig.</string>
+    <string name="first_run_intro_title">Hva er Loddboka?</string>
+    <string name="first_run_intro_body">Loddboka er til å trekke lodd fra loddbøker på basarer og innsamlingsaksjoner. Legg inn hver bok med farge og bokstav, trekk vinnere, og nullstill når du trenger en ny runde. Gratis, fungerer uten nett — ingen konto nødvendig.</string>
     <string name="legg_til_rediger_farge_label">Velg farge på loddbok:</string>
     <string name="legg_til_rediger_farge_error">Velg en farge.</string>
     <string name="legg_til_rediger_bokstav_label">Bokstav (A-Å)</string>

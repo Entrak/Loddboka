@@ -6,7 +6,9 @@
     <string name="hovedskjerm_add_loddbok_prompt">Klicka här för att lägga till en lotteribok</string>
     <string name="hovedskjerm_add_loddbok_cd">Lägg till ny lotteribok</string>
     <string name="hovedskjerm_welcome_title">Välkommen till Lotteriboken!</string>
-    <string name="hovedskjerm_welcome_description">Denna app låter dig dra lotter från lotteriböcker sålda på basarer eller andra evenemang där lotteriböcker används.</string>
+    <string name="hovedskjerm_welcome_description">Loddboka is for drawing tickets from raffle books (loddbøker) at bazaars and fundraisers. Add each book by color and letter, draw winners, reset when you need a new round. Free, works offline — no account required.</string>
+    <string name="first_run_intro_title">What is Loddboka?</string>
+    <string name="first_run_intro_body">Loddboka is for drawing tickets from raffle books (loddbøker) at bazaars and fundraisers. Add each book by color and letter, draw winners, reset when you need a new round. Free, works offline — no account required.</string>
     <string name="legg_til_rediger_farge_label">Välj färg på lotteriboken:</string>
     <string name="legg_til_rediger_farge_error">Välj en färg.</string>
     <string name="legg_til_rediger_bokstav_label">Bokstav (A-Ö)</string>

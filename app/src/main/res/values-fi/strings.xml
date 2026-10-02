@@ -6,7 +6,9 @@
     <string name="hovedskjerm_add_loddbok_prompt">Napsauta tästä lisätäksesi arpakirjan</string>
     <string name="hovedskjerm_add_loddbok_cd">Lisää uusi arpakirja</string>
     <string name="hovedskjerm_welcome_title">Tervetuloa Arpakirjaan!</string>
-    <string name="hovedskjerm_welcome_description">Tämä sovellus antaa sinun arpoa arpoja myyjäisissä tai muissa tapahtumissa myydyistä arpakirjoista.</string>
+    <string name="hovedskjerm_welcome_description">Loddboka is for drawing tickets from raffle books (loddbøker) at bazaars and fundraisers. Add each book by color and letter, draw winners, reset when you need a new round. Free, works offline — no account required.</string>
+    <string name="first_run_intro_title">What is Loddboka?</string>
+    <string name="first_run_intro_body">Loddboka is for drawing tickets from raffle books (loddbøker) at bazaars and fundraisers. Add each book by color and letter, draw winners, reset when you need a new round. Free, works offline — no account required.</string>
     <string name="legg_til_rediger_farge_label">Valitse arpakirjan väri:</string>
     <string name="legg_til_rediger_farge_error">Valitse väri.</string>
     <string name="legg_til_rediger_bokstav_label">Kirjain (A-Ö)</string>
