@@ -75,6 +75,7 @@ fun Historikkskjerm(
         ticket = stringResource(R.string.export_column_ticket),
         drawn = stringResource(R.string.export_column_drawn),
         chooserTitle = stringResource(R.string.share_results),
+        appName = stringResource(R.string.app_name),
         colorName = { farge ->
             when (farge) {
                 Farge.RØD -> context.getString(R.string.color_red)

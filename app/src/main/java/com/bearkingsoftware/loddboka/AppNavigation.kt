@@ -1,6 +1,7 @@
 package com.bearkingsoftware.loddboka
 
 import androidx.annotation.StringRes
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
@@ -13,6 +14,7 @@ import androidx.compose.material.icons.outlined.Star
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
+import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -39,9 +41,9 @@ import com.bearkingsoftware.loddboka.ui.InitialConfigurationScreen
 import com.bearkingsoftware.loddboka.ui.hovedskjerm.Hovedskjerm
 import com.bearkingsoftware.loddboka.ui.leggtil.LeggTilRedigerSkjerm
 import com.bearkingsoftware.loddboka.ui.settings.SettingsScreen
-import com.bearkingsoftware.loddboka.ui.settings.TesterTasksScreen
 import com.bearkingsoftware.loddboka.ui.settings.WhatIsLoddbokaScreen
 import com.bearkingsoftware.loddboka.ui.trekning.Historikkskjerm
+import com.bearkingsoftware.loddboka.ui.theme.GoldOnLight
 import com.bearkingsoftware.loddboka.ui.trekning.Trekningsskjerm
 import com.bearkingsoftware.loddboka.viewmodel.LoddbokViewModel
 
@@ -77,7 +79,6 @@ object Routes {
     const val InitialConfiguration = "initial_configuration"
     const val LeggTilRediger = "legg_til_rediger_skjerm"
     const val Historikk = "historikkskjerm"
-    const val TesterTasks = "tester_tasks"
     const val WhatIsLoddboka = "what_is_loddboka"
 
     fun leggTilRediger(id: Long = -1L): String = "$LeggTilRediger?id=$id"
@@ -99,6 +100,14 @@ fun AppNavigation() {
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentDestination = navBackStackEntry?.destination
     val showBottomBar = tabs.any { it.route == currentDestination?.route }
+    // M3 colours the selected label with colorScheme.secondary (Gold). Fine on the dark
+    // bar, unreadable on the light one (1.2:1), so darken it in light mode only.
+    val darkTheme = isSystemInDarkTheme()
+    val navItemColors = if (darkTheme) {
+        NavigationBarItemDefaults.colors()
+    } else {
+        NavigationBarItemDefaults.colors(selectedTextColor = GoldOnLight)
+    }
 
     // Always start at hovedskjerm so tab popUpTo(findStartDestination) stays valid
     // after first-run. Push InitialConfiguration only when needed.
@@ -127,6 +136,7 @@ fun AppNavigation() {
                                 },
                                 label = { Text(stringResource(tab.title)) },
                                 selected = selected,
+                                colors = navItemColors,
                                 onClick = {
                                     navController.navigate(tab.route) {
                                         popUpTo(navController.graph.findStartDestination().id) {
@@ -182,12 +192,8 @@ fun AppNavigation() {
                 composable(TabDestination.Settings.route) {
                     SettingsScreen(
                         viewModel = viewModel,
-                        onOpenTesterTasks = { navController.navigate(Routes.TesterTasks) },
                         onOpenWhatIsLoddboka = { navController.navigate(Routes.WhatIsLoddboka) }
                     )
-                }
-                composable(Routes.TesterTasks) {
-                    TesterTasksScreen(onBack = { navController.popBackStack() })
                 }
                 composable(Routes.WhatIsLoddboka) {
                     WhatIsLoddbokaScreen(onBack = { navController.popBackStack() })

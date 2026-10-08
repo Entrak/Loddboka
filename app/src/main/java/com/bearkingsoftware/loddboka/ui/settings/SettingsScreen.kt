@@ -1,5 +1,6 @@
 package com.bearkingsoftware.loddboka.ui.settings
 
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -32,7 +33,6 @@ import kotlinx.coroutines.launch
 @Composable
 fun SettingsScreen(
     viewModel: LoddbokViewModel,
-    onOpenTesterTasks: () -> Unit = {},
     onOpenWhatIsLoddboka: () -> Unit = {}
 ) {
     val uiState by viewModel.uiState.collectAsState()
@@ -96,9 +96,6 @@ fun SettingsScreen(
                 OutlinedButton(onClick = onOpenWhatIsLoddboka) {
                     Text(text = stringResource(R.string.first_run_intro_title))
                 }
-                OutlinedButton(onClick = onOpenTesterTasks) {
-                    Text(text = stringResource(R.string.tester_tasks_settings_button))
-                }
             }
             Text(
                 text = "ver. ${BuildConfig.VERSION_NAME}",
@@ -106,7 +103,11 @@ fun SettingsScreen(
                     .align(Alignment.BottomCenter)
                     .padding(padding)
                     .padding(8.dp),
-                color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.25f)
+                color = if (isSystemInDarkTheme()) {
+                    MaterialTheme.colorScheme.onBackground.copy(alpha = 0.25f)
+                } else {
+                    MaterialTheme.colorScheme.onSurfaceVariant
+                }
             )
         }
     }

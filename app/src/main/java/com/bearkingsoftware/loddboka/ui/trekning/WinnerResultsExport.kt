@@ -23,6 +23,8 @@ data class WinnerExportLabels(
     val ticket: String,
     val drawn: String,
     val chooserTitle: String,
+    /** Localized app name, used for the shared file names (e.g. "Raffle Book"). */
+    val appName: String,
     val colorName: (Farge) -> String,
 )
 
@@ -44,7 +46,9 @@ fun shareWinnerResults(
     }
     val headers = listOf("#", labels.book, labels.ticket, labels.drawn)
     val exportDay = SimpleDateFormat("yyyy-MM-dd", Locale.US).format(Date())
-    val baseName = "Loddboka-winners-$exportDay"
+    val namePart = labels.appName.trim().replace(Regex("[^\\p{L}\\p{N}]+"), "-").trim('-').ifEmpty { "Raffle-Book" }
+    val titlePart = labels.pdfTitle.trim().replace(Regex("[^\\p{L}\\p{N}]+"), "-").trim('-').ifEmpty { "winners" }
+    val baseName = "$namePart-$titlePart-$exportDay"
     val dir = File(context.cacheDir, "exports").apply { mkdirs() }
     val pdf = File(dir, "$baseName.pdf")
     val csv = File(dir, "$baseName.csv")

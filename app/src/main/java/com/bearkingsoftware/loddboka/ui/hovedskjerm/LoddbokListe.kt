@@ -15,11 +15,13 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.compositeOver
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.bearkingsoftware.loddboka.R
@@ -35,11 +37,14 @@ fun LoddbokListe(
     onDeleteClick: (Loddbok) -> Unit,
     onEditClick: (Loddbok) -> Unit
 ) {
+    val pageBackground = MaterialTheme.colorScheme.background
     LazyColumn(modifier = modifier) {
         items(loddboker, key = { it.id }) { loddbok ->
             val darkTheme = isSystemInDarkTheme()
             val containerColor = if (darkTheme) loddbok.farge.color else loddbok.farge.color.copy(alpha = 0.6f)
-            val textColor = getContrastingTextColor(containerColor)
+            // Light mode cards are translucent; judge contrast on the blended colour the user
+            // sees (blue/green/purple need black text there). Dark mode is opaque: unchanged.
+            val textColor = getContrastingTextColor(containerColor.compositeOver(pageBackground))
             Card(
                 modifier = Modifier
                     .padding(8.dp)
