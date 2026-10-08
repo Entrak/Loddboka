@@ -32,6 +32,9 @@
     <string name="settings_reset_dialog_text">Slette alle loddbøker?</string>
     <string name="settings_reset_dialog_confirm">Slett</string>
     <string name="settings_reset_dialog_cancel">Avbryt</string>
+    <string name="settings_reset_draw_confirm_title">Nullstille trekningen?</string>
+    <string name="settings_reset_draw_confirm_text">Vinnerne slettes, og alle lodd kan trekkes på nytt. Loddbøkene beholdes.</string>
+    <string name="settings_reset_draw_confirm">Nullstill</string>
     <string name="settings_language_use_system">Bruk systemspråk</string>
     <string name="settings_language_select">Velg språk</string>
     <string name="trekning_no_tickets_left">Ingen flere lodd tilgjengelig.</string>
@@ -85,4 +88,8 @@
     <string name="winners_show_time">Vis trekketid</string>
     <string name="winners_pdf_note_newest">Nyeste først</string>
     <string name="winners_pdf_note_draw">I trekkningsrekkefølge</string>
+    <string name="settings_contact_us">Kontakt oss</string>
+    <string name="settings_contact_no_email_app">Ingen e-postapp funnet. Adressen er kopiert.</string>
+    <string name="contact_subject_app_name">Loddboka</string>
+
 </resources>

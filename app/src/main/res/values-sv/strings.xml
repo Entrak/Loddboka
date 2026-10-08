@@ -32,6 +32,9 @@
     <string name="settings_reset_dialog_text">Ta bort alla häften?</string>
     <string name="settings_reset_dialog_confirm">Ta bort</string>
     <string name="settings_reset_dialog_cancel">Avbryt</string>
+    <string name="settings_reset_draw_confirm_title">Återställa dragningen?</string>
+    <string name="settings_reset_draw_confirm_text">Vinnarna tas bort, och alla lotter kan dras igen. Häftena behålls.</string>
+    <string name="settings_reset_draw_confirm">Återställ</string>
     <string name="settings_language_use_system">Använd systemspråk</string>
     <string name="settings_language_select">Välj språk</string>
     <string name="trekning_no_tickets_left">Inga fler lotter tillgängliga.</string>
@@ -73,4 +76,8 @@
     <string name="screen_title_historikk">Historik</string>
     <string name="screen_title_settings">Inställningar</string>
     <string name="close">Stäng</string>
+    <string name="settings_contact_us">Kontakta oss</string>
+    <string name="settings_contact_no_email_app">Ingen e-postapp hittades. Adressen är kopierad.</string>
+    <string name="contact_subject_app_name">Tombolan</string>
+
 </resources>

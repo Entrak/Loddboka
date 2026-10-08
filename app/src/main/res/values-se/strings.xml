@@ -32,6 +32,10 @@
     <string name="settings_reset_dialog_text">Sihkkot buot vuorbegirjjiid?</string>
     <string name="settings_reset_dialog_confirm">Sihko</string>
     <string name="settings_reset_dialog_cancel">Gaskkalduhte</string>
+    <string name="settings_reset_draw_confirm_title">Nullstille trekningen?</string>
+    <string name="settings_reset_draw_confirm_text">Vinnerne slettes, og alle lodd kan trekkes på nytt. Loddbøkene beholdes.</string>
+    <string name="settings_reset_draw_confirm">Nullstill</string>
+    <string name="settings_reset_draw_cancel">Avbryt</string>
     <string name="settings_language_use_system">Geavat systemgiela</string>
     <string name="settings_language_select">Vállje giela</string>
     <string name="trekning_no_tickets_left">Eai leat eanet vuorbbat olámuttos.</string>
@@ -39,7 +43,7 @@
     <string name="trekning_see_winners">Čájet vuoitit</string>
     <string name="trekning_new_draw">Ođđa geassin</string>
     <string name="trekning_new_draw_confirm_title">Ođđa geassin?</string>
-    <string name="trekning_new_draw_confirm_text">Buot vuorbbat šaddet fas geassojuvvot. Vuoitihistorjá báhcá. Vuorbegirjjit báhcet.</string>
+    <string name="trekning_new_draw_confirm_text">Buot vuorbbat šaddet fas geassojuvvot. Vuoitihistorjá báhcá. Loddbokkat báhcet.</string>
     <string name="trekning_new_draw_confirm">Álgat</string>
     <string name="trekning_press_button_to_draw">Deaddel boalu vai geasát vuoiti vuorbbi.</string>
     <string name="trekning_start_again">Álggat geassima ođđasit</string>
@@ -73,4 +77,8 @@
     <string name="screen_title_historikk">Historihkka</string>
     <string name="screen_title_settings">Heivehusat</string>
     <string name="close">Dahppat</string>
+    <string name="settings_contact_us">Kontakt oss</string>
+    <string name="settings_contact_no_email_app">Ingen e-postapp funnet. Adressen er kopiert.</string>
+    <string name="contact_subject_app_name">Loddboka</string>
+
 </resources>

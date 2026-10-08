@@ -1,6 +1,6 @@
 <resources>
-    <string name="loddbokliste_delete_dialog_title">Sihko vuorbegirjji?</string>
-    <string name="loddbokliste_delete_dialog_text">Dát vuorbegirji sihkkojuvvo bissovaččat.</string>
+    <string name="loddbokliste_delete_dialog_title">Sihko loddboka?</string>
+    <string name="loddbokliste_delete_dialog_text">Dát loddbok sihkkojuvvo bissovaččat.</string>
     <string name="loddbokliste_delete_dialog_confirm">Sihko</string>
     <string name="loddbokliste_delete_dialog_cancel">Gaskkalduhte</string>
 </resources>

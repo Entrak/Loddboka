@@ -32,6 +32,9 @@
     <string name="settings_reset_dialog_text">Slet alle hæfter?</string>
     <string name="settings_reset_dialog_confirm">Slet</string>
     <string name="settings_reset_dialog_cancel">Annuller</string>
+    <string name="settings_reset_draw_confirm_title">Nulstille trækningen?</string>
+    <string name="settings_reset_draw_confirm_text">Vinderne slettes, og alle lodsedler kan trækkes igen. Hæfterne beholdes.</string>
+    <string name="settings_reset_draw_confirm">Nulstil</string>
     <string name="settings_language_use_system">Brug systemsprog</string>
     <string name="settings_language_select">Vælg sprog</string>
     <string name="trekning_no_tickets_left">Ingen flere lodder tilgængelige.</string>
@@ -73,4 +76,8 @@
     <string name="screen_title_historikk">Historik</string>
     <string name="screen_title_settings">Indstillinger</string>
     <string name="close">Luk</string>
+    <string name="settings_contact_us">Kontakt os</string>
+    <string name="settings_contact_no_email_app">Ingen e-mailapp fundet. Adressen er kopieret.</string>
+    <string name="contact_subject_app_name">Tombolaen</string>
+
 </resources>
