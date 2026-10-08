@@ -7,7 +7,7 @@ enum class Language(
     val code: String,
     val text: String,
     val isSami: Boolean = false,
-    @DrawableRes val flag: Int? = null
+    @param:DrawableRes val flag: Int? = null
 ) {
     ENGLISH("en", "English", flag = R.drawable.gb),
     NORWEGIAN("nb", "Norsk", flag = R.drawable.no),

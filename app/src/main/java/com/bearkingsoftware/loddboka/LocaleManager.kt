@@ -27,6 +27,10 @@ class LocaleManager(private val context: Context) {
     companion object {
         private val LANGUAGE_KEY = stringPreferencesKey("language_key")
         val IS_FIRST_RUN_KEY = booleanPreferencesKey("is_first_run")
+        const val WINNERS_SORT_NEWEST = "newest"
+        const val WINNERS_SORT_DRAW = "draw"
+        private val WINNERS_SORT_KEY = stringPreferencesKey("winners_sort")
+        private val WINNERS_SHOW_TIME_KEY = booleanPreferencesKey("winners_show_time")
 
         /** Supported BCP-47 language codes from [Language]. */
         val supportedLanguageCodes: Set<String> =
@@ -82,5 +86,30 @@ class LocaleManager(private val context: Context) {
             settings[IS_FIRST_RUN_KEY] = false
         }
         applyAppLocales(Locale.forLanguageTag(code))
+    }
+
+    /** "newest" (default) or "draw". Unknown stored values fall back to newest. */
+    val winnersSortFlow = context.dataStore.data.map { preferences ->
+        when (preferences[WINNERS_SORT_KEY]) {
+            WINNERS_SORT_DRAW -> WINNERS_SORT_DRAW
+            else -> WINNERS_SORT_NEWEST
+        }
+    }
+
+    val winnersShowTimeFlow = context.dataStore.data.map { preferences ->
+        preferences[WINNERS_SHOW_TIME_KEY] ?: false
+    }
+
+    suspend fun setWinnersSort(sort: String) {
+        val value = if (sort == WINNERS_SORT_DRAW) WINNERS_SORT_DRAW else WINNERS_SORT_NEWEST
+        context.dataStore.edit { settings ->
+            settings[WINNERS_SORT_KEY] = value
+        }
+    }
+
+    suspend fun setWinnersShowTime(show: Boolean) {
+        context.dataStore.edit { settings ->
+            settings[WINNERS_SHOW_TIME_KEY] = show
+        }
     }
 }

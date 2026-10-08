@@ -40,6 +40,7 @@ import com.bearkingsoftware.loddboka.ui.hovedskjerm.Hovedskjerm
 import com.bearkingsoftware.loddboka.ui.leggtil.LeggTilRedigerSkjerm
 import com.bearkingsoftware.loddboka.ui.settings.SettingsScreen
 import com.bearkingsoftware.loddboka.ui.settings.TesterTasksScreen
+import com.bearkingsoftware.loddboka.ui.settings.WhatIsLoddbokaScreen
 import com.bearkingsoftware.loddboka.ui.trekning.Historikkskjerm
 import com.bearkingsoftware.loddboka.ui.trekning.Trekningsskjerm
 import com.bearkingsoftware.loddboka.viewmodel.LoddbokViewModel
@@ -77,6 +78,7 @@ object Routes {
     const val LeggTilRediger = "legg_til_rediger_skjerm"
     const val Historikk = "historikkskjerm"
     const val TesterTasks = "tester_tasks"
+    const val WhatIsLoddboka = "what_is_loddboka"
 
     fun leggTilRediger(id: Long = -1L): String = "$LeggTilRediger?id=$id"
 }
@@ -167,7 +169,8 @@ fun AppNavigation() {
                 composable(TabDestination.Trekningsskjerm.route) {
                     Trekningsskjerm(
                         viewModel = viewModel,
-                        onNavigateToHistorikk = { navController.navigate(Routes.Historikk) }
+                        onNavigateToHistorikk = { navController.navigate(Routes.Historikk) },
+                        onAddLoddbok = { navController.navigate(Routes.leggTilRediger()) }
                     )
                 }
                 composable(Routes.Historikk) {
@@ -179,11 +182,15 @@ fun AppNavigation() {
                 composable(TabDestination.Settings.route) {
                     SettingsScreen(
                         viewModel = viewModel,
-                        onOpenTesterTasks = { navController.navigate(Routes.TesterTasks) }
+                        onOpenTesterTasks = { navController.navigate(Routes.TesterTasks) },
+                        onOpenWhatIsLoddboka = { navController.navigate(Routes.WhatIsLoddboka) }
                     )
                 }
                 composable(Routes.TesterTasks) {
                     TesterTasksScreen(onBack = { navController.popBackStack() })
+                }
+                composable(Routes.WhatIsLoddboka) {
+                    WhatIsLoddbokaScreen(onBack = { navController.popBackStack() })
                 }
             }
         }

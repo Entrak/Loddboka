@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -15,6 +14,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
@@ -22,12 +23,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.core.os.LocaleListCompat
 import com.bearkingsoftware.loddboka.ui.theme.BrownText
 import com.bearkingsoftware.loddboka.ui.theme.LoddbokaTheme
-import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
-import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
 
@@ -36,18 +34,20 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
 
         val localeManager = LocaleManager(this)
+        val startupLocale = runBlocking { localeManager.currentLocale() }
+        LocaleManager.applyAppLocales(startupLocale)
 
-        runBlocking {
-            val locale = localeManager.localeFlow.first()
-            val appLocale = LocaleListCompat.forLanguageTags(locale.toLanguageTag())
-            AppCompatDelegate.setApplicationLocales(appLocale)
-        }
-        
         setContent {
-            val currentLocale by localeManager.localeFlow.collectAsState(initial = Locale.getDefault())
+            val currentLocale by localeManager.localeFlow.collectAsState(initial = startupLocale)
 
-            LoddbokaTheme(darkTheme = isSystemInDarkTheme(), dynamicColor = false) {
-                MainScreen(locale = currentLocale)
+            LaunchedEffect(currentLocale) {
+                LocaleManager.applyAppLocales(currentLocale)
+            }
+
+            CompositionLocalProvider(LocalLocaleManager provides localeManager) {
+                LoddbokaTheme(darkTheme = isSystemInDarkTheme(), dynamicColor = false) {
+                    MainScreen(locale = currentLocale)
+                }
             }
         }
     }
@@ -67,7 +67,17 @@ fun SplashScreen() {
             contentDescription = "Bear King Software Logo",
             modifier = Modifier.fillMaxWidth(0.4f)
         )
-        Text(text = "Bear King", style = MaterialTheme.typography.headlineMedium, color = BrownText, fontWeight = FontWeight.Bold)
-        Text(text = "Software", style = MaterialTheme.typography.headlineMedium, color = BrownText, fontWeight = FontWeight.Bold)
+        Text(
+            text = "Bear King",
+            style = MaterialTheme.typography.headlineMedium,
+            color = BrownText,
+            fontWeight = FontWeight.Bold
+        )
+        Text(
+            text = "Software",
+            style = MaterialTheme.typography.headlineMedium,
+            color = BrownText,
+            fontWeight = FontWeight.Bold
+        )
     }
 }

@@ -1,0 +1,6 @@
+<resources>
+    <string name="loddbokliste_delete_dialog_title">Slett loddbok?</string>
+    <string name="loddbokliste_delete_dialog_text">Denne loddboken slettes permanent.</string>
+    <string name="loddbokliste_delete_dialog_confirm">Slett</string>
+    <string name="loddbokliste_delete_dialog_cancel">Avbryt</string>
+</resources>

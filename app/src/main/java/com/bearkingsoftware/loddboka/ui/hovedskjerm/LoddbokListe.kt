@@ -24,6 +24,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.bearkingsoftware.loddboka.R
 import com.bearkingsoftware.loddboka.data.Loddbok
+import com.bearkingsoftware.loddboka.ui.color
 import com.bearkingsoftware.loddboka.ui.getContrastingTextColor
 import com.bearkingsoftware.loddboka.ui.toStringResource
 
@@ -36,8 +37,9 @@ fun LoddbokListe(
 ) {
     LazyColumn(modifier = modifier) {
         items(loddboker, key = { it.id }) { loddbok ->
-            val textColor = getContrastingTextColor(loddbok.farge.color)
             val darkTheme = isSystemInDarkTheme()
+            val containerColor = if (darkTheme) loddbok.farge.color else loddbok.farge.color.copy(alpha = 0.6f)
+            val textColor = getContrastingTextColor(containerColor)
             Card(
                 modifier = Modifier
                     .padding(8.dp)
@@ -45,7 +47,7 @@ fun LoddbokListe(
                 elevation = CardDefaults.cardElevation(defaultElevation = 0.dp),
                 border = BorderStroke(2.dp, Color.Black),
                 colors = CardDefaults.cardColors(
-                    containerColor = if (darkTheme) loddbok.farge.color else loddbok.farge.color.copy(alpha = 0.6f)
+                    containerColor = containerColor
                 )
             ) {
                 Row(

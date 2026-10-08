@@ -25,7 +25,8 @@ data class HovedskjermState(
 
 data class Vinner(
     val loddbok: Loddbok,
-    val loddNummer: Int
+    val loddNummer: Int,
+    val trukketMillis: Long,
 )
 
 data class TrekningsskjermState(
@@ -167,7 +168,7 @@ class LoddbokViewModel(application: Application) : AndroidViewModel(application)
                 if (ticket < size) {
                     // Long offset: ticket may exceed Int.MAX_VALUE for huge ranges; toInt() truncates.
                     val number = (range.first.toLong() + ticket).toInt()
-                    chosen = Vinner(bookPool.loddbok, number)
+                    chosen = Vinner(bookPool.loddbok, number, System.currentTimeMillis())
                     when {
                         range.first == range.last -> rangeIterator.remove()
                         number == range.first -> rangeIterator.set((number + 1)..range.last)
