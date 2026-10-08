@@ -1,15 +1,15 @@
 <resources>
-    <string name="app_name">Vuorbegirji</string>
-    <string name="edit_loddbok">Rievdat vuorbegirjji</string>
-    <string name="add_loddbok">Lasit vuorbegirjji</string>
-    <string name="save_loddbok">Vurke vuorbegirjji</string>
-    <string name="hovedskjerm_add_loddbok_prompt">Deaddel dása vai lasihat vuorbegirjji</string>
-    <string name="hovedskjerm_add_loddbok_cd">Lasit ođđa vuorbegirjji</string>
+    <string name="app_name">Loddboka</string>
+    <string name="edit_loddbok">Rediger loddbok</string>
+    <string name="add_loddbok">Legg til loddbok</string>
+    <string name="save_loddbok">Lagre loddbok</string>
+    <string name="hovedskjerm_add_loddbok_prompt">Trykk her for å legge til loddbok</string>
+    <string name="hovedskjerm_add_loddbok_cd">Legg til ny loddbok</string>
     <string name="hovedskjerm_welcome_title">Velkommen til Loddboka!</string>
     <string name="hovedskjerm_welcome_description">Loddboka trekker vinnere fra loddbøker på basarer og innsamlingsaksjoner. Legg inn hver bok med farge og bokstav, trekk vinnere, og del resultatene.</string>
     <string name="first_run_intro_title">Hva er Loddboka?</string>
     <string name="first_run_intro_body">Loddboka trekker vinnere fra loddbøker på basarer og innsamlingsaksjoner. Legg inn hver bok med farge og bokstav, trekk vinnere, og del resultatene. Gratis, fungerer uten nett — ingen konto nødvendig.</string>
-    <string name="legg_til_rediger_farge_label">Vállje vuorbegirjji ivnni:</string>
+    <string name="legg_til_rediger_farge_label">Velg farge på loddbok:</string>
     <string name="legg_til_rediger_farge_error">Vállje ivnni.</string>
     <string name="legg_til_rediger_bokstav_label">Bustávva (A-Å)</string>
     <string name="legg_til_rediger_bokstav_error">Čále ovtta bustáva (A-Å).</string>
@@ -18,18 +18,18 @@
     <string name="legg_til_rediger_slutt_label">Loahppanummar</string>
     <string name="legg_til_rediger_slutt_error">Loahppa ferte leat unnimusat álgu ja eanemusat 1 000 000.</string>
     <string name="show_help">Čájet veahki</string>
-    <string name="bokstav_help">Čále bustáva mii lea vuorbegirjjis.</string>
-    <string name="start_help">Čále vuosttaš nummara vuorbegirjjis. Jos giđda lea guorus, de dat automáhtalaččat šaddá 1.</string>
-    <string name="end_help">Čále maŋemus nummara vuorbegirjjis. Jos giđda lea guorus, de dat automáhtalaččat šaddá 100.</string>
+    <string name="bokstav_help">Skriv inn bokstaven som er på loddboken.</string>
+    <string name="start_help">Skriv inn det første nummeret i loddboken. Om feltet er tomt, vil det automatisk settes til 1.</string>
+    <string name="end_help">Skriv inn det siste nummeret i loddboken. Om feltet er tomt, vil det automatisk settes til 100.</string>
     <string name="legg_til_rediger_bokstav_placeholder"> </string>
     <string name="legg_til_rediger_start_placeholder">1</string>
     <string name="legg_til_rediger_slutt_placeholder">100</string>
 
     <string name="settings_title">Heivehusat</string>
     <string name="settings_reset_winning_ticket_list">Nollestat geassima</string>
-    <string name="settings_reset_raffle_ticket_book_entries">Sihko buot vuorbegirjjiid</string>
+    <string name="settings_reset_raffle_ticket_book_entries">Slett alle loddbøker</string>
     <string name="settings_reset_dialog_title">Sihko nollestáđđema</string>
-    <string name="settings_reset_dialog_text">Sihkkot buot vuorbegirjjiid?</string>
+    <string name="settings_reset_dialog_text">Slette alle loddbøker?</string>
     <string name="settings_reset_dialog_confirm">Sihko</string>
     <string name="settings_reset_dialog_cancel">Gaskkalduhte</string>
     <string name="settings_reset_draw_confirm_title">Nullstille trekningen?</string>
@@ -71,7 +71,7 @@
     <string name="color_purple">Violeta</string>
     <string name="color_white">Vilges</string>
 
-    <string name="screen_title_loddboker">Vuorbegirjjit</string>
+    <string name="screen_title_loddboker">Loddbøker</string>
     <string name="screen_title_legg_til_rediger">Lasit/Rievdat</string>
     <string name="screen_title_trekk">Geasse</string>
     <string name="screen_title_historikk">Historihkka</string>
