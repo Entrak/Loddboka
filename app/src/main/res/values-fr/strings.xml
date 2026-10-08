@@ -5,7 +5,10 @@
     <string name="save_loddbok">Enregistrer le carnet de tombola</string>
     <string name="hovedskjerm_add_loddbok_prompt">Cliquez ici pour ajouter un carnet de tombola</string>
     <string name="hovedskjerm_add_loddbok_cd">Ajouter un nouveau carnet de tombola</string>
-    <string name="hovedskjerm_welcome_title">Bienvenue dans le Livre de Tombola !</string>
+    <string name="hovedskjerm_welcome_title">Bienvenue dans le carnet de tombola !</string>
+    <string name="hovedskjerm_welcome_description">Le carnet de tombola tire les gagnants de carnets de tombola lors de bazars et de collectes de fonds. Ajoutez chaque carnet par couleur et par lettre, tirez les gagnants et partagez les résultats.</string>
+    <string name="first_run_intro_title">Qu\'est-ce que le carnet de tombola ?</string>
+    <string name="first_run_intro_body">Le carnet de tombola tire les gagnants de carnets de tombola lors de bazars et de collectes de fonds. Ajoutez chaque carnet par couleur et par lettre, tirez les gagnants et partagez les résultats. Gratuit, fonctionne hors ligne — aucun compte requis.</string>
     <string name="legg_til_rediger_farge_label">Sélectionnez la couleur du carnet de tombola :</string>
     <string name="legg_til_rediger_farge_error">Veuillez sélectionner une couleur.</string>
     <string name="legg_til_rediger_bokstav_label">Lettre (A-Z)</string>

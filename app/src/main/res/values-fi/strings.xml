@@ -1,12 +1,15 @@
 <resources>
     <string name="app_name">Arpakirja</string>
-    <string name="edit_loddbok">Muokkaa arpakirjaa</string>
-    <string name="add_loddbok">Lisää arpakirja</string>
-    <string name="save_loddbok">Tallenna arpakirja</string>
-    <string name="hovedskjerm_add_loddbok_prompt">Napsauta tästä lisätäksesi arpakirjan</string>
-    <string name="hovedskjerm_add_loddbok_cd">Lisää uusi arpakirja</string>
-    <string name="hovedskjerm_welcome_title">Tervetuloa Arpakirjaan!</string>
-    <string name="legg_til_rediger_farge_label">Valitse arpakirjan väri:</string>
+    <string name="edit_loddbok">Muokkaa vihkoa</string>
+    <string name="add_loddbok">Lisää vihko</string>
+    <string name="save_loddbok">Tallenna vihko</string>
+    <string name="hovedskjerm_add_loddbok_prompt">Napsauta tästä lisätäksesi vihkon</string>
+    <string name="hovedskjerm_add_loddbok_cd">Lisää uusi vihko</string>
+    <string name="hovedskjerm_welcome_title">Tervetuloa!</string>
+    <string name="hovedskjerm_welcome_description">Sovellus arpoo voittajat arpajaisten lipuista basaareissa ja keräyksissä. Lisää jokainen vihko värillä ja kirjaimella, arvo voittajat ja jaa tulokset.</string>
+    <string name="first_run_intro_title">Miten arvonta toimii?</string>
+    <string name="first_run_intro_body">Sovellus arpoo voittajat arpajaisten lipuista basaareissa ja keräyksissä. Lisää jokainen vihko värillä ja kirjaimella, arvo voittajat ja jaa tulokset. Ilmainen, toimii ilman verkkoa — tiliä ei tarvita.</string>
+    <string name="legg_til_rediger_farge_label">Valitse vihkon väri:</string>
     <string name="legg_til_rediger_farge_error">Valitse väri.</string>
     <string name="legg_til_rediger_bokstav_label">Kirjain (A-Ö)</string>
     <string name="legg_til_rediger_bokstav_error">Anna yksi kirjain (A-Ö).</string>
@@ -15,18 +18,18 @@
     <string name="legg_til_rediger_slutt_label">Lopetusnumero</string>
     <string name="legg_til_rediger_slutt_error">Lopun on oltava vähintään alku ja enintään 1 000 000.</string>
     <string name="show_help">Näytä ohje</string>
-    <string name="bokstav_help">Anna arpakirjassa oleva kirjain.</string>
-    <string name="start_help">Anna arpakirjan ensimmäinen numero. Jos kenttä on tyhjä, se asetetaan automaattisesti arvoon 1.</string>
-    <string name="end_help">Anna arpakirjan viimeinen numero. Jos kenttä on tyhjä, se asetetaan automaattisesti arvoon 100.</string>
+    <string name="bokstav_help">Anna vihkossa oleva kirjain.</string>
+    <string name="start_help">Anna vihkon ensimmäinen numero. Jos kenttä on tyhjä, se asetetaan automaattisesti arvoon 1.</string>
+    <string name="end_help">Anna vihkon viimeinen numero. Jos kenttä on tyhjä, se asetetaan automaattisesti arvoon 100.</string>
     <string name="legg_til_rediger_bokstav_placeholder"> </string>
     <string name="legg_til_rediger_start_placeholder">1</string>
     <string name="legg_til_rediger_slutt_placeholder">100</string>
 
     <string name="settings_title">Asetukset</string>
     <string name="settings_reset_winning_ticket_list">Nollaa arvonta</string>
-    <string name="settings_reset_raffle_ticket_book_entries">Poista kaikki arpakirjat</string>
+    <string name="settings_reset_raffle_ticket_book_entries">Poista kaikki vihkot</string>
     <string name="settings_reset_dialog_title">Vahvista nollaus</string>
-    <string name="settings_reset_dialog_text">Poistetaanko kaikki arpakirjat?</string>
+    <string name="settings_reset_dialog_text">Poistetaanko kaikki vihkot?</string>
     <string name="settings_reset_dialog_confirm">Poista</string>
     <string name="settings_reset_dialog_cancel">Peruuta</string>
     <string name="settings_language_use_system">Käytä järjestelmän kieltä</string>
@@ -36,7 +39,7 @@
     <string name="trekning_see_winners">Näytä voittajat</string>
     <string name="trekning_new_draw">Uusi arvonta</string>
     <string name="trekning_new_draw_confirm_title">Uusi arvonta?</string>
-    <string name="trekning_new_draw_confirm_text">Kaikki arvat ovat taas arvottavissa. Voittohistoria säilytetään. Arpakirjat säilytetään.</string>
+    <string name="trekning_new_draw_confirm_text">Kaikki arvat ovat taas arvottavissa. Voittohistoria säilytetään. Vihkot säilytetään.</string>
     <string name="trekning_new_draw_confirm">Aloita</string>
     <string name="trekning_press_button_to_draw">Paina painiketta arpoaksesi voittonumeron.</string>
     <string name="trekning_start_again">Aloita arvonta alusta</string>
@@ -64,7 +67,7 @@
     <string name="color_purple">Violetti</string>
     <string name="color_white">Valkoinen</string>
 
-    <string name="screen_title_loddboker">Arpakirjat</string>
+    <string name="screen_title_loddboker">Vihkot</string>
     <string name="screen_title_legg_til_rediger">Lisää/Muokkaa</string>
     <string name="screen_title_trekk">Arvo</string>
     <string name="screen_title_historikk">Historia</string>

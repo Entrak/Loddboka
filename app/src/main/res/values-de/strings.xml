@@ -1,12 +1,15 @@
 <resources>
     <string name="app_name">Losbuch</string>
-    <string name="edit_loddbok">Losbuch bearbeiten</string>
-    <string name="add_loddbok">Losbuch hinzufügen</string>
-    <string name="save_loddbok">Losbuch speichern</string>
-    <string name="hovedskjerm_add_loddbok_prompt">Klicken Sie hier, um ein Losbuch hinzuzufügen</string>
-    <string name="hovedskjerm_add_loddbok_cd">Neues Losbuch hinzufügen</string>
-    <string name="hovedskjerm_welcome_title">Willkommen im Losbuch!</string>
-    <string name="legg_til_rediger_farge_label">Farbe des Losbuchs auswählen:</string>
+    <string name="edit_loddbok">Heft bearbeiten</string>
+    <string name="add_loddbok">Heft hinzufügen</string>
+    <string name="save_loddbok">Heft speichern</string>
+    <string name="hovedskjerm_add_loddbok_prompt">Klicken Sie hier, um ein Heft hinzuzufügen</string>
+    <string name="hovedskjerm_add_loddbok_cd">Neues Heft hinzufügen</string>
+    <string name="hovedskjerm_welcome_title">Willkommen bei der Tombola!</string>
+    <string name="hovedskjerm_welcome_description">Die Tombola zieht Gewinner aus Losen auf Basaren und bei Spendenaktionen. Füge jedes Heft mit Farbe und Buchstabe hinzu, ziehe die Gewinner und teile die Ergebnisse.</string>
+    <string name="first_run_intro_title">Was ist die Tombola?</string>
+    <string name="first_run_intro_body">Die Tombola zieht Gewinner aus Losen auf Basaren und bei Spendenaktionen. Füge jedes Heft mit Farbe und Buchstabe hinzu, ziehe die Gewinner und teile die Ergebnisse. Kostenlos, funktioniert offline — kein Konto nötig.</string>
+    <string name="legg_til_rediger_farge_label">Farbe des Hefts auswählen:</string>
     <string name="legg_til_rediger_farge_error">Bitte wählen Sie eine Farbe aus.</string>
     <string name="legg_til_rediger_bokstav_label">Buchstabe (A-Z)</string>
     <string name="legg_til_rediger_bokstav_error">Bitte geben Sie einen einzelnen Buchstaben (A-Z) ein.</string>
@@ -15,18 +18,18 @@
     <string name="legg_til_rediger_slutt_label">Endnummer</string>
     <string name="legg_til_rediger_slutt_error">Ende muss mindestens Start und höchstens 1 000 000 sein.</string>
     <string name="show_help">Hilfe anzeigen</string>
-    <string name="bokstav_help">Geben Sie den Buchstaben auf dem Losbuch ein.</string>
-    <string name="start_help">Geben Sie die erste Nummer im Losbuch ein. Wenn das Feld leer ist, wird es automatisch auf 1 gesetzt.</string>
-    <string name="end_help">Geben Sie die letzte Nummer im Losbuch ein. Wenn das Feld leer ist, wird es automatisch auf 100 gesetzt.</string>
+    <string name="bokstav_help">Geben Sie den Buchstaben auf dem Heft ein.</string>
+    <string name="start_help">Geben Sie die erste Nummer im Heft ein. Wenn das Feld leer ist, wird es automatisch auf 1 gesetzt.</string>
+    <string name="end_help">Geben Sie die letzte Nummer im Heft ein. Wenn das Feld leer ist, wird es automatisch auf 100 gesetzt.</string>
     <string name="legg_til_rediger_bokstav_placeholder"> </string>
     <string name="legg_til_rediger_start_placeholder">1</string>
     <string name="legg_til_rediger_slutt_placeholder">100</string>
 
     <string name="settings_title">Einstellungen</string>
     <string name="settings_reset_winning_ticket_list">Ziehung zurücksetzen</string>
-    <string name="settings_reset_raffle_ticket_book_entries">Alle Losbücher löschen</string>
+    <string name="settings_reset_raffle_ticket_book_entries">Alle Hefte löschen</string>
     <string name="settings_reset_dialog_title">Zurücksetzen bestätigen</string>
-    <string name="settings_reset_dialog_text">Alle Losbücher löschen?</string>
+    <string name="settings_reset_dialog_text">Alle Hefte löschen?</string>
     <string name="settings_reset_dialog_confirm">Löschen</string>
     <string name="settings_reset_dialog_cancel">Abbrechen</string>
     <string name="settings_language_use_system">Systemsprache verwenden</string>
@@ -36,7 +39,7 @@
     <string name="trekning_see_winners">Gewinner anzeigen</string>
     <string name="trekning_new_draw">Neue Ziehung</string>
     <string name="trekning_new_draw_confirm_title">Neue Ziehung?</string>
-    <string name="trekning_new_draw_confirm_text">Alle Lose sind wieder ziehbar. Die Gewinnerhistorie bleibt erhalten. Die Losbücher bleiben erhalten.</string>
+    <string name="trekning_new_draw_confirm_text">Alle Lose sind wieder ziehbar. Die Gewinnerhistorie bleibt erhalten. Die Hefte bleiben erhalten.</string>
     <string name="trekning_new_draw_confirm">Starten</string>
     <string name="trekning_press_button_to_draw">Drücken Sie die Taste, um ein Gewinnlos zu ziehen.</string>
     <string name="trekning_start_again">Ziehung erneut starten</string>
@@ -64,7 +67,7 @@
     <string name="color_purple">Lila</string>
     <string name="color_white">Weiß</string>
 
-    <string name="screen_title_loddboker">Losbücher</string>
+    <string name="screen_title_loddboker">Hefte</string>
     <string name="screen_title_legg_til_rediger">Hinzufügen/Bearbeiten</string>
     <string name="screen_title_trekk">Ziehen</string>
     <string name="screen_title_historikk">Verlauf</string>

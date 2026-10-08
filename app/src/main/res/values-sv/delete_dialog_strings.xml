@@ -1,6 +1,6 @@
 <resources>
-    <string name="loddbokliste_delete_dialog_title">Ta bort loddbok?</string>
-    <string name="loddbokliste_delete_dialog_text">Denna loddbok raderas permanent.</string>
+    <string name="loddbokliste_delete_dialog_title">Ta bort häfte?</string>
+    <string name="loddbokliste_delete_dialog_text">Detta häfte raderas permanent.</string>
     <string name="loddbokliste_delete_dialog_confirm">Ta bort</string>
     <string name="loddbokliste_delete_dialog_cancel">Avbryt</string>
 </resources>
