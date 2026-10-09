@@ -30,7 +30,7 @@ android {
         applicationId = "com.bearkingsoftware.loddboka"
         minSdk = 24
         targetSdk = 36
-        versionCode = 23
+        versionCode = 24
         versionName = "1.01.261009"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
