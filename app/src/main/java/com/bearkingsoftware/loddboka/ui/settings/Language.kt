@@ -17,8 +17,8 @@ enum class Language(
     SAMI("se", "Sámegiella", isSami = true, flag = R.drawable.sami_flag),
     FRENCH("fr", "Français", flag = R.drawable.fr),
     GERMAN("de", "Deutsch", flag = R.drawable.de),
-    SPANISH("es", "Español"),
-    JAPANESE("ja", "日本語")
+    SPANISH("es", "Español", flag = R.drawable.es),
+    JAPANESE("ja", "日本語", flag = R.drawable.jp)
 }
 
 val supportedLanguages = listOf(
