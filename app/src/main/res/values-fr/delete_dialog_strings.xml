@@ -1,5 +1,5 @@
 <resources>
-    <string name="loddbokliste_delete_dialog_title">Supprimer le carnet?</string>
+    <string name="loddbokliste_delete_dialog_title">Supprimer le carnet\u00A0?</string>
     <string name="loddbokliste_delete_dialog_text">Ce carnet de tombola sera définitivement supprimé.</string>
     <string name="loddbokliste_delete_dialog_confirm">Supprimer</string>
     <string name="loddbokliste_delete_dialog_cancel">Annuler</string>

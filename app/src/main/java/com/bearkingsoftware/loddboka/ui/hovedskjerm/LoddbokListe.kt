@@ -63,7 +63,7 @@ fun LoddbokListe(
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
-                        text = "${stringResource(R.string.loddbokliste_farge)}: ${loddbok.farge.toStringResource()}   ${stringResource(R.string.loddbokliste_bokstav)}: ${loddbok.bokstav}   ${stringResource(R.string.loddbokliste_nummer)}: ${loddbok.start}-${loddbok.end}",
+                        text = "${stringResource(R.string.loddbokliste_farge)}:\u00A0${loddbok.farge.toStringResource()}   ${stringResource(R.string.loddbokliste_bokstav)}:\u00A0${loddbok.bokstav}   ${stringResource(R.string.loddbokliste_nummer)}:\u00A0${loddbok.start}\u2011${loddbok.end}",
                         color = textColor,
                         modifier = Modifier.weight(1f)
                     )

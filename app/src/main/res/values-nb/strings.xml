@@ -32,6 +32,7 @@
     <string name="settings_reset_dialog_text">Slette alle loddbøker?</string>
     <string name="settings_reset_dialog_confirm">Slett</string>
     <string name="settings_reset_dialog_cancel">Avbryt</string>
+    <string name="settings_reset_draw_cancel">@string/settings_reset_dialog_cancel</string>
     <string name="settings_reset_draw_confirm_title">Nullstille trekningen?</string>
     <string name="settings_reset_draw_confirm_text">Vinnerne slettes, og alle lodd kan trekkes på nytt. Loddbøkene beholdes.</string>
     <string name="settings_reset_draw_confirm">Nullstill</string>
