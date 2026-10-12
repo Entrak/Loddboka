@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Livre de Tombola</string>
+    <string name="app_name">Carnet de tombola</string>
     <string name="edit_loddbok">Modifier le carnet de tombola</string>
     <string name="add_loddbok">Ajouter un carnet de tombola</string>
     <string name="save_loddbok">Enregistrer le carnet de tombola</string>
@@ -35,9 +35,12 @@
     <string name="settings_reset_draw_confirm_title">Réinitialiser le tirage ?</string>
     <string name="settings_reset_draw_confirm_text">Les gagnants sont effacés, et tous les billets peuvent être tirés à nouveau. Les carnets sont conservés.</string>
     <string name="settings_reset_draw_confirm">Réinitialiser</string>
+    <string name="settings_reset_draw_cancel">@string/settings_reset_dialog_cancel</string>
     <string name="settings_language_use_system">Utiliser la langue du système</string>
     <string name="settings_language_select">Sélectionner la langue</string>
     <string name="trekning_no_tickets_left">Plus de tickets disponibles.</string>
+    <string name="trekning_no_books_title">Ajoutez d\'abord un carnet de tombola</string>
+    <string name="trekning_no_books_hint">Ajoutez les carnets de tombola que vous avez vendus, puis revenez pour le tirage.</string>
     <string name="trekning_empty_pool_title">Tirage terminé</string>
     <string name="trekning_see_winners">Voir les gagnants</string>
     <string name="trekning_new_draw">Nouveau tirage</string>
@@ -76,6 +79,16 @@
     <string name="screen_title_historikk">Historique</string>
     <string name="screen_title_settings">Paramètres</string>
     <string name="close">Fermer</string>
+    <string name="share_results">Partager les résultats</string>
+    <string name="winners_pdf_title">Gagnants</string>
+    <string name="export_column_book">Carnet</string>
+    <string name="export_column_ticket">Billet</string>
+    <string name="export_column_drawn">Tiré le</string>
+    <string name="winners_sort_newest">Plus récents d\'abord</string>
+    <string name="winners_sort_draw">Ordre du tirage</string>
+    <string name="winners_show_time">Afficher l\'heure du tirage</string>
+    <string name="winners_pdf_note_newest">Plus récents d\'abord</string>
+    <string name="winners_pdf_note_draw">Dans l\'ordre du tirage</string>
     <string name="settings_contact_us">Nous contacter</string>
     <string name="settings_contact_no_email_app">Aucune application de courriel trouvée. L\'adresse a été copiée.</string>
     <string name="contact_subject_app_name">Carnet de tombola</string>

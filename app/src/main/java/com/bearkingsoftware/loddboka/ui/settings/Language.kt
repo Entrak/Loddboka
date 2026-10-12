@@ -16,7 +16,9 @@ enum class Language(
     FINNISH("fi", "Suomi", flag = R.drawable.fi),
     SAMI("se", "Sámegiella", isSami = true, flag = R.drawable.sami_flag),
     FRENCH("fr", "Français", flag = R.drawable.fr),
-    GERMAN("de", "Deutsch", flag = R.drawable.de)
+    GERMAN("de", "Deutsch", flag = R.drawable.de),
+    SPANISH("es", "Español"),
+    JAPANESE("ja", "日本語")
 }
 
 val supportedLanguages = listOf(
@@ -27,5 +29,7 @@ val supportedLanguages = listOf(
     Language.FINNISH,
     Language.SAMI,
     Language.FRENCH,
-    Language.GERMAN
+    Language.GERMAN,
+    Language.SPANISH,
+    Language.JAPANESE
 )

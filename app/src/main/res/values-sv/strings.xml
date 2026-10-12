@@ -1,15 +1,15 @@
 <resources>
-    <string name="app_name">Lotteriboken</string>
-    <string name="edit_loddbok">Redigera häfte</string>
-    <string name="add_loddbok">Lägg till häfte</string>
-    <string name="save_loddbok">Spara häfte</string>
-    <string name="hovedskjerm_add_loddbok_prompt">Klicka här för att lägga till ett häfte</string>
-    <string name="hovedskjerm_add_loddbok_cd">Lägg till nytt häfte</string>
+    <string name="app_name">Tombolan</string>
+    <string name="edit_loddbok">Redigera lottblock</string>
+    <string name="add_loddbok">Lägg till lottblock</string>
+    <string name="save_loddbok">Spara lottblock</string>
+    <string name="hovedskjerm_add_loddbok_prompt">Klicka här för att lägga till ett lottblock</string>
+    <string name="hovedskjerm_add_loddbok_cd">Lägg till nytt lottblock</string>
     <string name="hovedskjerm_welcome_title">Välkommen till Tombolan!</string>
-    <string name="hovedskjerm_welcome_description">Tombolan drar vinnare från tombolalotter på basarer och insamlingar. Lägg till varje häfte med färg och bokstav, dra vinnare och dela resultaten.</string>
+    <string name="hovedskjerm_welcome_description">Tombolan drar vinnare från tombolalotter på basarer och insamlingar. Lägg till varje lottblock med färg och bokstav, dra vinnare och dela resultaten.</string>
     <string name="first_run_intro_title">Vad är Tombolan?</string>
-    <string name="first_run_intro_body">Tombolan drar vinnare från tombolalotter på basarer och insamlingar. Lägg till varje häfte med färg och bokstav, dra vinnare och dela resultaten. Gratis, fungerar utan nät — inget konto krävs.</string>
-    <string name="legg_til_rediger_farge_label">Välj färg på häftet:</string>
+    <string name="first_run_intro_body">Tombolan drar vinnare från tombolalotter på basarer och insamlingar. Lägg till varje lottblock med färg och bokstav, dra vinnare och dela resultaten. Gratis, fungerar utan nät — inget konto krävs.</string>
+    <string name="legg_til_rediger_farge_label">Välj färg på lottblocket:</string>
     <string name="legg_til_rediger_farge_error">Välj en färg.</string>
     <string name="legg_til_rediger_bokstav_label">Bokstav (A-Ö)</string>
     <string name="legg_til_rediger_bokstav_error">Ange en enskild bokstav (A-Ö).</string>
@@ -18,22 +18,22 @@
     <string name="legg_til_rediger_slutt_label">Slutnummer</string>
     <string name="legg_til_rediger_slutt_error">Slut måste vara minst start och högst 1 000 000.</string>
     <string name="show_help">Visa hjälp</string>
-    <string name="bokstav_help">Ange bokstaven som finns på häftet.</string>
-    <string name="start_help">Ange det första numret i häftet. Om fältet är tomt, sätts det automatiskt till 1.</string>
-    <string name="end_help">Ange det sista numret i häftet. Om fältet är tomt, sätts det automatiskt till 100.</string>
+    <string name="bokstav_help">Ange bokstaven som finns på lottblocket.</string>
+    <string name="start_help">Ange det första numret i lottblocket. Om fältet är tomt, sätts det automatiskt till 1.</string>
+    <string name="end_help">Ange det sista numret i lottblocket. Om fältet är tomt, sätts det automatiskt till 100.</string>
     <string name="legg_til_rediger_bokstav_placeholder"> </string>
     <string name="legg_til_rediger_start_placeholder">1</string>
     <string name="legg_til_rediger_slutt_placeholder">100</string>
 
     <string name="settings_title">Inställningar</string>
     <string name="settings_reset_winning_ticket_list">Återställ dragning</string>
-    <string name="settings_reset_raffle_ticket_book_entries">Ta bort alla häften</string>
+    <string name="settings_reset_raffle_ticket_book_entries">Ta bort alla lottblock</string>
     <string name="settings_reset_dialog_title">Bekräfta återställning</string>
-    <string name="settings_reset_dialog_text">Ta bort alla häften?</string>
+    <string name="settings_reset_dialog_text">Ta bort alla lottblock?</string>
     <string name="settings_reset_dialog_confirm">Ta bort</string>
     <string name="settings_reset_dialog_cancel">Avbryt</string>
     <string name="settings_reset_draw_confirm_title">Återställa dragningen?</string>
-    <string name="settings_reset_draw_confirm_text">Vinnarna tas bort, och alla lotter kan dras igen. Häftena behålls.</string>
+    <string name="settings_reset_draw_confirm_text">Vinnarna tas bort, och alla lotter kan dras igen. Lottblocken behålls.</string>
     <string name="settings_reset_draw_confirm">Återställ</string>
     <string name="settings_language_use_system">Använd systemspråk</string>
     <string name="settings_language_select">Välj språk</string>
@@ -42,7 +42,7 @@
     <string name="trekning_see_winners">Se vinnare</string>
     <string name="trekning_new_draw">Ny dragning</string>
     <string name="trekning_new_draw_confirm_title">Ny dragning?</string>
-    <string name="trekning_new_draw_confirm_text">Alla lotter blir dragbara igen. Vinnarhistoriken behålls. Häftena behålls.</string>
+    <string name="trekning_new_draw_confirm_text">Alla lotter blir dragbara igen. Vinnarhistoriken behålls. Lottblocken behålls.</string>
     <string name="trekning_new_draw_confirm">Starta</string>
     <string name="trekning_press_button_to_draw">Tryck på knappen för att dra en vinstlott.</string>
     <string name="trekning_start_again">Starta dragningen på nytt</string>
@@ -70,7 +70,7 @@
     <string name="color_purple">Lila</string>
     <string name="color_white">Vit</string>
 
-    <string name="screen_title_loddboker">Häften</string>
+    <string name="screen_title_loddboker">Lottblock</string>
     <string name="screen_title_legg_til_rediger">Lägg till/Redigera</string>
     <string name="screen_title_trekk">Dra</string>
     <string name="screen_title_historikk">Historik</string>
