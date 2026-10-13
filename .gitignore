@@ -17,3 +17,8 @@ local.properties
 *.jks
 keystore.properties
 *.aab
+
+# secrets
+**/google-services.json
+*.keystore
+UPLOAD_KEY_PASSWORDS*
