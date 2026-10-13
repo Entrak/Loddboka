@@ -5,11 +5,19 @@ plugins {
     alias(libs.plugins.kotlin.compose)
 }
 
-// Load keystore properties
-val keystorePropertiesFile = rootProject.file("keystore.properties")
+// Signing config lives outside the repo. Override with -PloddbokaSigningDir=... or env LODDBOKA_SIGNING_DIR.
+val signingDir: File = file(
+    (findProperty("loddbokaSigningDir") as String?)
+        ?: System.getenv("LODDBOKA_SIGNING_DIR")
+        ?: "${System.getProperty("user.home")}/.bearking-signing/loddboka"
+)
+val keystorePropertiesFile = File(signingDir, "keystore.properties")
 val keystoreProperties = Properties()
-if (keystorePropertiesFile.exists()) {
-    keystoreProperties.load(keystorePropertiesFile.inputStream())
+val hasReleaseSigning = keystorePropertiesFile.exists()
+if (hasReleaseSigning) {
+    keystorePropertiesFile.inputStream().use { keystoreProperties.load(it) }
+} else {
+    logger.warn("Loddboka: no signing config at ${keystorePropertiesFile.path}; release builds will be unsigned.")
 }
 
 
@@ -19,7 +27,7 @@ android {
 
     signingConfigs {
         create("release") {
-            storeFile = file(keystoreProperties.getProperty("storeFile", "my-release-key.jks"))
+            storeFile = File(signingDir, keystoreProperties.getProperty("storeFile", "my-release-key.jks"))
             storePassword = keystoreProperties.getProperty("storePassword")
             keyAlias = keystoreProperties.getProperty("keyAlias")
             keyPassword = keystoreProperties.getProperty("keyPassword")
@@ -44,7 +52,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            signingConfig = signingConfigs.getByName("release")
+            if (hasReleaseSigning) signingConfig = signingConfigs.getByName("release")
             ndk {
                 debugSymbolLevel = "FULL"
             }
